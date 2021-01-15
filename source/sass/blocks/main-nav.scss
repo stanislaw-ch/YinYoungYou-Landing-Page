@@ -1,0 +1,20 @@
+.main-nav {
+  background-color: rgba(30, 9, 6, 0.15);
+}
+
+.main-nav__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 110px;
+}
+
+.main-nav__logo svg {
+  fill: #000000;
+  stroke: #000000;
+  stroke-width: 0.4px;
+}
+
+.main-nav__list {
+  margin-left: 115px;
+}

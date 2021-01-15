@@ -1,0 +1,98 @@
+// .order__discount {
+
+// }
+
+.order__discount-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.order__discount-title {
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.order__discount-subtitle {
+  margin-top: 9px;
+  font-size: 12px;
+  letter-spacing: 0.9px;
+}
+
+.order__discount-promo {
+  display: flex;
+  margin-top: 20px;
+}
+
+.order__discount-promo input {
+  box-sizing: border-box;
+  width: 170px;
+  height: 36px;
+  margin-right: 33px;
+
+  text-align: center;
+  letter-spacing: 1.2px;
+
+  border: 2px solid #dddada;
+  border-radius: 2px;
+
+  appearance: none;
+}
+
+.order__discount-promo button {
+  box-sizing: border-box;
+  width: 200px;
+  height: 36px;
+
+  letter-spacing: 1.2px;
+  color: #ffffff;
+  font-weight: 700;
+
+  border: none;
+  border-radius: 2px;
+  background-color: #c1c1c1;
+
+  &:hover {
+    background-color: #585757;
+  }
+
+  &:active {
+    background-color: #9f9e9e;
+  }
+}
+
+.order__to-order {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.order__to-order span {
+  margin-top: -3px;
+  padding-right: 4px;
+
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.order__to-order button {
+  width: 220px;
+  height: 36px;
+  margin-top: 40px;
+
+  letter-spacing: 1.2px;
+  color: #ffffff;
+  font-weight: 700;
+
+  border: none;
+  border-radius: 2px;
+  background-color: #e27f00;
+
+  &:hover {
+    background-color: #ffa839;
+  }
+
+  &:active {
+    background-color: #da8b26;
+  }
+}

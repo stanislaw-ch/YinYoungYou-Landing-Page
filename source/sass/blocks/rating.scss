@@ -1,0 +1,40 @@
+.rating__stars {
+  position: relative;
+  display: block;
+  font-size: 0;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    background-image: url("../img/stars.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+}
+
+.rating__stars span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  height: 100%;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    background-image: url("../img/stars_active.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+}
+
+.rating__amount {
+  margin-top: 2px;
+  margin-left: 3px;
+  font-size: 10px;
+}

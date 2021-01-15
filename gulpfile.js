@@ -31,7 +31,7 @@ gulp.task(`default`, () =>
 );
 
 gulp.task(`css`, function () {
-  return gulp.src(`source/sass/style.scss`)
+  return gulp.src(`source/sass/main.scss`)
       .pipe(plumber())
       .pipe(sourcemap.init())
       .pipe(sass())

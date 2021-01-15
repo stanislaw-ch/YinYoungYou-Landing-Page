@@ -1,0 +1,27 @@
+.sort {
+  display: flex;
+  list-style-type: none;
+}
+
+.sort__item:first-child {
+  margin-left: 19px;
+}
+
+.sort__item {
+  margin-right: 34px;
+}
+
+.sort__item a {
+  color: #585757;
+
+  &:hover,
+  &:active {
+    color: #474747;
+    opacity: 0.5;
+  }
+}
+
+.sort__item--active a {
+  color: #000000;
+  pointer-events: none;
+}
