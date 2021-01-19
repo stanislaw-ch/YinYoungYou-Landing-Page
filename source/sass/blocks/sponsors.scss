@@ -1,0 +1,24 @@
+.sponsors {
+  // &__content {
+  // }
+
+  &__content h3 {
+    margin: 0;
+
+    font-family: "Info", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  // &__content-wrapper {
+  // }
+  // &__visualization-item {
+  // }
+  &__visualization-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  // &__visualization-wrapper {
+  // }
+}

@@ -1,0 +1,29 @@
+.offer {
+  // &__content {
+  // }
+
+  &__content h3 {
+    margin: 0;
+
+    font-family: "Info", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  &__content p {
+    margin: 0;
+  }
+
+  // &__content-wrapper {
+  // }
+  // &__logo {
+  // }
+  // &__subscribe {
+  // }
+
+  &__subscribe p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
