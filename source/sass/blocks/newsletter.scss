@@ -1,13 +1,21 @@
 .newsletter {
-  &__content h3 {
-    margin: 0;
-
-    font-family: "Info", "Arial", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
+  &__content-wrapper {
+    margin-top: 100px;
   }
-  // &__content-wrapper {
-  // }
-  // &__subscribe {
-  // }
+
+  &__content {
+    padding: 50px 0;
+
+    & h3 {
+      margin: 0;
+
+      font-family: "Info", "Arial", sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+
+  &__subscribe {
+    padding-top: 20px;
+  }
 }

@@ -13,7 +13,6 @@
   <link rel="preload" href="fonts/info-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
-  <link rel="apple-touch-icon" href="img/webclip.png">
 </head>
 <body>
   <header class="page-header">
@@ -57,8 +56,10 @@
           <div class="offer__subscribe subscribe">
             <p>Trage hier deine E-Mail-Adresse ein - wir informieren dich gerne, sobald wir starten können:</p>
             <form action="#" method="POST">
-              <input type="text" maxlength="256" name="EMAIL" data-name="EMAIL" placeholder="" id="EMAIL-3" required="">
-              <button type="submit" value="ABONNIEREN" data-wait="Post ist unterwegs...">Abbonieren</button>
+              <div class="subscribe__fields-wrapper">
+                <input type="text" maxlength="256" name="EMAIL" data-name="EMAIL" placeholder="" id="EMAIL-3" required="">
+                <button type="submit" value="ABONNIEREN" data-wait="Post ist unterwegs...">Abbonieren</button>
+              </div>
               <!-- <label>
                 <input
                     class="visually-hidden"
@@ -235,8 +236,10 @@
             <div class="newsletter__subscribe subscribe">
               <p>Trage hier deine E-Mail-Adresse ein - wir informieren dich gerne, sobald wir starten können:</p>
               <form action="#" method="POST">
-                <input type="text" maxlength="256" name="EMAIL" data-name="EMAIL" placeholder="Deine E-Mail" id="EMAIL-3" required="">
-                <button type="submit" value="ABONNIEREN" data-wait="Post ist unterwegs...">Abbonieren</button>
+                <div class="subscribe__fields-wrapper">
+                  <input type="text" maxlength="256" name="EMAIL" data-name="EMAIL" placeholder="" id="EMAIL-4" required="">
+                  <button type="submit" value="ABONNIEREN" data-wait="Post ist unterwegs...">Abbonieren</button>
+                </div>
                 <!-- <label>
                   <input
                       class="visually-hidden"

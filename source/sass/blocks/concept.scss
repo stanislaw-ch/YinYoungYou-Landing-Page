@@ -1,19 +1,20 @@
 .concept {
-  // &__content {
-  // }
+  &__content-wrapper {
+    padding-top: 100px;
+  }
 
-  &__content h3 {
-    margin: 0;
+  &__content {
+    & h3 {
+      margin: 0;
 
-    font-family: "Info", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    text-transform: uppercase;
+      font-family: "Info", "Arial", sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
   }
 
   &__content p {
-    margin: 0;
+    margin: 30px 0 0;
   }
-  // &__content-wrapper {
-  // }
 }

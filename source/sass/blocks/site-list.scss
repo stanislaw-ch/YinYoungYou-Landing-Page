@@ -3,11 +3,22 @@
   padding: 0;
   list-style-type: none;
 
-  &__item a {
-    font-family: "Info", "Arial", sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #000000;
+  &__item {
+    & a {
+      font-family: "Info", "Arial", sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #000000;
+
+      &:hover {
+        color: #ff5f0e;
+        transition: all 400ms ease;
+      }
+
+      &:active {
+        color: #7c7c7c;
+      }
+    }
   }
 }

@@ -1,8 +1,14 @@
 .main-nav {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+  }
+
+  &__logo {
+    padding-top: 6px;
+  }
   // &__list {
-  // }
-  // &__logo {
-  // }
-  // &__wrapper {
   // }
 }
