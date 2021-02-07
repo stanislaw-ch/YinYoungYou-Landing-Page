@@ -1,13 +1,10 @@
-# Gulp template for YingYoungYou Landing page
+# Webpack template for YingYoungYou Landing page
 ## Brief operating instructions
-### To get started, you must have installed:
-* Node.js v.10.15.3
-* Gulp v4
-* npm last version
 ## Basic commands for work
 * Installation - `npm i`
 * Running a local server - `npm start`
-* Building a project without starting a local server - `npm run-script build`
+* Building a project without starting a local server in development mode - `npm run-script dev`
+* Building the project in production mode - `npm run-script build`
 * Running testing for compliance with code guides - `npm test`
-## All development is in the directory `source`
-## The resulting code goes to the directory `build`
+## All development is in the directory `src`
+## The resulting code goes to the directory `public`
