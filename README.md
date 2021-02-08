@@ -1,5 +1,4 @@
 # Webpack template for YingYoungYou Landing page
-## Brief operating instructions
 ## Basic commands for work
 * Installation - `npm i`
 * Running a local server - `npm start`
