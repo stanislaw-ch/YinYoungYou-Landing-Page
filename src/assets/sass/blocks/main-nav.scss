@@ -3,12 +3,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
     height: 72px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   &__logo {
-    padding-top: 6px;
+    display: block;
+    width: auto;
+    height: 100%;
   }
-  // &__list {
-  // }
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    &__wrapper {
+      height: 54px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+
+    &__logo {
+      & img {
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
 }

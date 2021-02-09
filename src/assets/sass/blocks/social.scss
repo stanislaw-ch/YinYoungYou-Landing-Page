@@ -6,3 +6,17 @@
   // &__item {
   // }
 }
+
+@media (min-width: 450px) {
+  .social {
+    &__item {
+      display: flex;
+      justify-content: center;
+      width: 120px;
+
+      & svg {
+        height: 27px;
+      }
+    }
+  }
+}

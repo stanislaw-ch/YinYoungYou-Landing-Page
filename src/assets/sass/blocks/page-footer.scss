@@ -39,3 +39,54 @@
     padding: 100px 0 0;
   }
 }
+
+@media (min-width: 450px) {
+  .page-footer {
+    background-color: #f7f7f7;
+
+    &__content-wrapper {
+      padding: 20px 0;
+    }
+
+    &__logo {
+      & img {
+        width: 41px;
+      }
+    }
+
+    &__info-list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin: 20px 0 0;
+    }
+
+    &__info-item {
+      width: 120px;
+      text-align: center;
+
+      &:nth-child(n + 2) {
+        margin-top: 0;
+      }
+
+      &:first-child {
+        margin-right: auto;
+        // text-align: left;
+      }
+
+      &:last-child {
+        margin-left: auto;
+        // text-align: right;
+      }
+
+      & a {
+        font-size: 14px;
+      }
+    }
+
+    &__social {
+      padding: 40px 0 0;
+    }
+  }
+}

@@ -18,3 +18,24 @@
     margin: 30px 0 0;
   }
 }
+
+@media (min-width: 700px) {
+  .concept {
+    &__content-wrapper {
+      padding-top: 70px;
+    }
+
+    &__content {
+      & h3 {
+        font-size: 16px;
+      }
+    }
+
+    &__content p {
+      margin: 20px 0 0;
+
+      font-size: 14px;
+      line-height: 26px;
+    }
+  }
+}

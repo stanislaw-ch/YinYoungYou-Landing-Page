@@ -6,7 +6,6 @@ const MiniCssExtractPlugin = require(`mini-css-extract-plugin`);
 const OptimizeCssAssetsWebpackPlugin = require(`optimize-css-assets-webpack-plugin`);
 const TerserWebpackPlugin = require(`terser-webpack-plugin`);
 const SVGSpriteMapPlugin = require(`svg-spritemap-webpack-plugin`);
-// const HotModuleReplacement = require(`hot-module-replacement`);
 const webpack = require(`webpack`);
 
 const isDev = process.env.NODE_ENV === `development`;

@@ -1,6 +1,7 @@
 .sponsors {
   &__content-wrapper {
     padding-top: 100px;
+    margin-bottom: 100px;
   }
 
   &__content {
@@ -31,6 +32,40 @@
   &__visualization-item {
     &:nth-child(n + 2) {
       margin-top: 70px;
+    }
+  }
+}
+
+
+@media (min-width: 500px) {
+  .sponsors {
+    &__content-wrapper {
+      padding-top: 70px;
+      margin-bottom: 100px;
+    }
+
+    &__visualization-wrapper {
+      padding-top: 30px;
+    }
+
+    &__visualization-list {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    &__visualization-item {
+      width: 132px;
+      height: 75px;
+
+      & img {
+        width: auto;
+        max-height: 75px;
+      }
+
+      &:nth-child(n + 2) {
+        margin-top: 0;
+      }
     }
   }
 }
