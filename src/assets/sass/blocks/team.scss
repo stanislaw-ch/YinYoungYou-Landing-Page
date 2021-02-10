@@ -111,3 +111,44 @@
     }
   }
 }
+
+@media (min-width: 900px) {
+  .team {
+    &__content-wrapper {
+      padding-top: 100px;
+    }
+
+    &__content {
+      & h3 {
+        margin: 0 0 15px;
+
+        font-size: 20px;
+      }
+
+      & b {
+        font-size: 20px;
+      }
+    }
+
+    &__visualization-wrapper {
+      padding-top: 60px;
+    }
+
+    &__visualization-item {
+      width: 220px;
+
+      & dl {
+        margin: 20px 0 0;
+      }
+
+      & dt {
+        font-size: 21px;
+      }
+
+      & dd {
+        margin: 10px 0 0;
+        font-size: 16px;
+      }
+    }
+  }
+}

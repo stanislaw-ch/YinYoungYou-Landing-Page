@@ -20,3 +20,13 @@
     }
   }
 }
+
+@media (min-width: 800px) {
+  .social {
+    &__item {
+      & svg {
+        height: 35px;
+      }
+    }
+  }
+}

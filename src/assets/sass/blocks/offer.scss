@@ -56,6 +56,10 @@
       background-size: 347px auto;
       background-repeat: no-repeat;
     }
+
+    &__subscribe {
+      width: 354px;
+    }
   }
 }
 
@@ -64,17 +68,13 @@
     padding-bottom: 30px;
 
     &__bg {
-      // position: absolute;
       top: 0;
       right: 0;
-      // z-index: -1;
       width: 650px;
       height: 1000px;
 
-      // background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../img/bg-graublau@1x.png");
       background-position: 530px -105px;
       background-size: 650px auto;
-      // background-repeat: no-repeat;
     }
 
     &__content-wrapper {
@@ -119,5 +119,71 @@
         line-height: 26px;
       }
     }
+  }
+}
+
+@media (min-width: 830px) {
+  .offer {
+    &__logo {
+      & img {
+        height: 265px;
+      }
+    }
+
+    &__subscribe {
+      width: 390px;
+      margin-top: -48px;
+      padding-top: 0;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .offer {
+    &__content {
+      width: 500px;
+    }
+  }
+}
+
+@media (min-width: 950px) {
+  .offer {
+    padding-bottom: 102px;
+
+    &__bg {
+      width: 790px;
+
+      background-position: 646px -148px;
+      background-size: 790px auto;
+    }
+
+    &__content-wrapper {
+      padding: 83px 0 0;
+    }
+
+    // &__logo {
+    //   & img {
+    //     height: 265px;
+    //   }
+    // }
+
+    &__content {
+      width: 600px;
+
+      & h3 {
+        font-size: 22px;
+      }
+
+      & p {
+        margin: 25px 0 0;
+        font-size: 16px;
+      }
+    }
+
+    // &__subscribe {
+    //   width: 390px;
+    //   margin-top: -48px;
+    //   padding-top: 0;
+    // }
   }
 }

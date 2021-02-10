@@ -32,3 +32,13 @@
     }
   }
 }
+
+@media (min-width: 900px) {
+  .main-nav {
+    &__wrapper {
+      height: 72px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}

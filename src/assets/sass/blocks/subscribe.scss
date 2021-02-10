@@ -76,14 +76,6 @@
   }
 }
 
-@media (min-width: 414px) {
-  .subscribe {
-    & form {
-      width: 354px;
-    }
-  }
-}
-
 @media (min-width: 450px) {
   .subscribe {
     &__message {
@@ -93,6 +85,20 @@
 
     &__fields-wrapper {
       padding-top: 20px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .subscribe {
+    // &__message {
+    //   width: 354px;
+    //   margin-top: 20px;
+    // }
+
+    &__fields-wrapper {
+      height: 30px;
+      padding-top: 16px;
     }
   }
 }

@@ -42,8 +42,6 @@
 
 @media (min-width: 450px) {
   .page-footer {
-    background-color: #f7f7f7;
-
     &__content-wrapper {
       padding: 20px 0;
     }
@@ -72,12 +70,10 @@
 
       &:first-child {
         margin-right: auto;
-        // text-align: left;
       }
 
       &:last-child {
         margin-left: auto;
-        // text-align: right;
       }
 
       & a {
@@ -87,6 +83,34 @@
 
     &__social {
       padding: 40px 0 0;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .page-footer {
+    &__content-wrapper {
+      padding: 35px 0;
+    }
+
+    &__logo {
+      & img {
+        width: 43px;
+      }
+    }
+
+    &__info-list {
+      margin: 40px 0 0;
+    }
+
+    &__info-item {
+      & a {
+        font-size: 11px;
+      }
+    }
+
+    &__social {
+      padding: 60px 0 0;
     }
   }
 }
