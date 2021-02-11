@@ -102,3 +102,25 @@
     }
   }
 }
+
+@media (min-width: 1280px) {
+  .subscribe {
+    // &__message {
+    //   width: 354px;
+    //   margin-top: 20px;
+    // }
+
+    &__fields-wrapper {
+      height: 38px;
+      // padding-top: 16px;
+
+      & button {
+        min-width: 150px;
+      }
+
+      & input {
+        margin-right: 5px;
+      }
+    }
+  }
+}

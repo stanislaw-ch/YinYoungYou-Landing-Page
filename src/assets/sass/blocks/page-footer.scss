@@ -114,3 +114,31 @@
     }
   }
 }
+
+@media (min-width: 1100px) {
+  .page-footer {
+    &__content-wrapper {
+      padding: 45px 0;
+    }
+
+    &__logo {
+      & img {
+        width: 55px;
+      }
+    }
+
+    &__info-list {
+      margin: 50px 0 0;
+    }
+
+    &__info-item {
+      & a {
+        font-size: 14px;
+      }
+    }
+
+    &__social {
+      padding: 75px 0 0;
+    }
+  }
+}

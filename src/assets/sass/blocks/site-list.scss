@@ -22,3 +22,13 @@
     }
   }
 }
+
+@media (min-width: 1280px) {
+  .site-list {
+    &__item {
+      & a {
+        font-size: 18px;
+      }
+    }
+  }
+}
