@@ -215,3 +215,53 @@
     }
   }
 }
+
+@media (min-width: 1700px) {
+  .team {
+    &__content-wrapper {
+      padding-top: 310px;
+    }
+
+    &__content {
+      & h3 {
+        margin: 0 0 20px;
+
+        font-size: 38px;
+        line-height: 47px;
+      }
+
+      & b {
+        font-size: 38px;
+        line-height: 47px;
+      }
+    }
+
+    &__visualization-wrapper {
+      padding-top: 110px;
+    }
+
+    &__visualization-item {
+      width: 400px;
+
+      & img {
+        width: auto;
+        height: 400px;
+      }
+
+      & dl {
+        margin: 40px 0 0;
+      }
+
+      & dt {
+        font-size: 40px;
+        line-height: 50px;
+      }
+
+      & dd {
+        margin: 15px 0 0;
+        font-size: 26px;
+        line-height: 34px;
+      }
+    }
+  }
+}

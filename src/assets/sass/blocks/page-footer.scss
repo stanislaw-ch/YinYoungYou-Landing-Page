@@ -142,3 +142,33 @@
     }
   }
 }
+
+@media (min-width: 1700px) {
+  .page-footer {
+    &__content-wrapper {
+      padding: 60px 0;
+    }
+
+    &__logo {
+      & img {
+        width: 80px;
+      }
+    }
+
+    &__info-list {
+      margin: 75px 0 0;
+    }
+
+    &__info-item {
+      width: 185px;
+
+      & a {
+        font-size: 22px;
+      }
+    }
+
+    &__social {
+      padding: 110px 0 0;
+    }
+  }
+}

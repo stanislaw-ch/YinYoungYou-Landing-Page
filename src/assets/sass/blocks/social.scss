@@ -30,3 +30,15 @@
     }
   }
 }
+
+@media (min-width: 1700px) {
+  .social {
+    &__item {
+      width: 185px;
+
+      & svg {
+        height: 65px;
+      }
+    }
+  }
+}

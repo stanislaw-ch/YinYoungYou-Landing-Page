@@ -124,3 +124,29 @@
     }
   }
 }
+
+@media (min-width: 1700px) {
+  .subscribe {
+    // &__message {
+    //   width: 354px;
+    //   margin-top: 20px;
+    // }
+
+    &__fields-wrapper {
+      height: 57px;
+      // padding-top: 16px;
+
+      & button {
+        min-width: 225px;
+        font-size: 22px;
+      }
+
+      & input {
+        margin-right: 10px;
+        padding: 8px 12px 8px 50px;
+        background-position: 16px 57%;
+        background-size: 32px;
+      }
+    }
+  }
+}

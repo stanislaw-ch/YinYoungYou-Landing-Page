@@ -120,3 +120,32 @@
     }
   }
 }
+
+@media (min-width: 1700px) {
+  .sponsors {
+    &__content-wrapper {
+      padding-top: 200px;
+      // padding-bottom: 0;
+      margin-bottom: 350px;
+    }
+
+    &__content {
+      & h3 {
+        font-size: 22px;
+      }
+    }
+
+    &__visualization-wrapper {
+      padding-top: 70px;
+    }
+
+    &__visualization-item {
+      width: 265px;
+      height: 180px;
+
+      & img {
+        max-height: 180px;
+      }
+    }
+  }
+}

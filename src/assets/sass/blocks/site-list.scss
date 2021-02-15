@@ -32,3 +32,14 @@
     }
   }
 }
+
+
+@media (min-width: 1700px) {
+  .site-list {
+    &__item {
+      & a {
+        font-size: 22px;
+      }
+    }
+  }
+}
