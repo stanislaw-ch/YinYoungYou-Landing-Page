@@ -1,7 +1,7 @@
 .sponsors {
   &__content-wrapper {
-    padding-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 114px;
+    margin-bottom: 114px;
   }
 
   &__content {
@@ -17,7 +17,7 @@
   }
 
   &__visualization-wrapper {
-    padding-top: 40px;
+    margin-top: 36px;
   }
 
   &__visualization-list {
@@ -31,12 +31,12 @@
 
   &__visualization-item {
     &:nth-child(n + 2) {
-      margin-top: 70px;
+      margin-top: 67px;
     }
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .sponsors {
     &__content-wrapper {
       padding-top: 70px;

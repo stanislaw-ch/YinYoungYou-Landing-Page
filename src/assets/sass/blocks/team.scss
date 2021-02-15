@@ -1,11 +1,11 @@
 .team {
   &__content-wrapper {
-    padding-top: 100px;
+    margin-top: 84px;
   }
 
   &__content {
     & h3 {
-      margin: 0 0 30px;
+      margin: 0 0 15px;
 
       font-family: "Info", "Arial", sans-serif;
       font-weight: 400;
@@ -36,7 +36,7 @@
 
   &__visualization-item {
     &:nth-child(n + 2) {
-      margin-top: 70px;
+      margin-top: 75px;
     }
 
     & img {
@@ -44,7 +44,7 @@
     }
 
     & dl {
-      margin: 20px 0 0;
+      margin: 17px 0 0;
       text-align: center;
     }
 
@@ -55,12 +55,12 @@
     }
 
     & dd {
-      margin: 10px 0 0;
+      margin: 7px 0 0;
     }
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .team {
     &__content-wrapper {
       padding-top: 70px;

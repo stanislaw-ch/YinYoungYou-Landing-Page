@@ -1,13 +1,14 @@
 .social {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  padding: 0;
+  // margin: 0;
   list-style-type: none;
   // &__item {
   // }
 }
 
-@media (min-width: 450px) {
+@media (min-width: 768px) {
   .social {
     &__item {
       display: flex;

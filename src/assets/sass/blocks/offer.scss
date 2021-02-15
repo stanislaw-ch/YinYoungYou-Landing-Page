@@ -1,6 +1,6 @@
 .offer {
   &__content-wrapper {
-    padding: 20px 0 0;
+    margin: 20px 0 0;
   }
 
   &__logo {
@@ -29,7 +29,7 @@
   }
 
   &__subscribe {
-    padding-top: 40px;
+    margin-top: 40px;
 
     & > p {
       font-size: 14px;
@@ -38,7 +38,7 @@
   }
 }
 
-@media (min-width: 414px) {
+@media (min-width: 414px) and  (min-height: 700px) {
   .offer {
     position: relative;
     overflow: hidden;
@@ -57,13 +57,90 @@
       background-repeat: no-repeat;
     }
 
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      height: calc(100vh - 72px);
+      // background-color: chartreuse;
+    }
+
+    &__content-wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 70%;
+    }
+
+    &__logo {
+      height: 40%;
+
+      & img {
+        display: block;
+        margin: 0 auto;
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    &__content {
+      height: 60%;
+      margin-top: 13%;
+
+      & p {
+        margin-top: 8%;
+      }
+    }
+
     &__subscribe {
-      width: 354px;
+      display: flex;
+      flex-direction: column;
+      height: 30%;
+      width: 100%;
+      margin-top: auto;
+      // margin-top: 14%;
+      margin-bottom: 2%;
+
+      & p {
+        margin-top: auto;
+        margin-bottom: 0;
+      }
+
+      & form {
+        margin-top: 15px;
+      }
     }
   }
 }
 
-@media (min-width: 750px) {
+@media (min-width: 500px) {
+  .offer {
+    &__logo {
+      height: 50%;
+    }
+
+    &__content {
+      height: 50%;
+      // width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+
+      & p {
+        & br {
+          display: block;
+          content: "";
+          margin-top: 10px;
+        }
+      }
+    }
+
+    &__subscribe {
+      width: 440px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@media (min-width: 768px) {
   .offer {
     padding-bottom: 30px;
 

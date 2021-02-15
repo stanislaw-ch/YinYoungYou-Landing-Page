@@ -36,11 +36,11 @@
   }
 
   &__social {
-    padding: 100px 0 0;
+    margin: 111px 0 0;
   }
 }
 
-@media (min-width: 450px) {
+@media (min-width: 768px) {
   .page-footer {
     &__content-wrapper {
       padding: 20px 0;
