@@ -13,27 +13,32 @@
     display: block;
     width: auto;
     height: 100%;
+
+    & img {
+      width: auto;
+      height: 100%;
+    }
   }
 }
 
 @media (min-width: 768px) {
   .main-nav {
-    &__logo {
-      & img {
-        width: auto;
-        height: 100%;
-      }
-    }
+    // &__logo {
+    //   & img {
+    //     width: auto;
+    //     height: 100%;
+    //   }
+    // }
   }
 }
 
 @media (min-width: 900px) {
   .main-nav {
-    &__wrapper {
-      height: 72px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
+    // &__wrapper {
+    //   height: 72px;
+    //   padding-top: 10px;
+    //   padding-bottom: 10px;
+    // }
   }
 }
 

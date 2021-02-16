@@ -41,6 +41,7 @@
       height: 100%;
       font-family: "Info", "Arial", sans-serif;
       font-weight: 700;
+      font-size: 14px;
       text-transform: uppercase;
       color: #ffffff;
 
@@ -85,7 +86,15 @@
     }
 
     &__fields-wrapper {
-      padding-top: 20px;
+      // padding-top: 20px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .subscribe {
+    & button {
+      min-width: 150px;
     }
   }
 }

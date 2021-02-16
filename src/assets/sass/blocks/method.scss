@@ -21,7 +21,7 @@
   }
 
   &__visualization-wrapper {
-    padding-top: 60px;
+    margin-top: 60px;
   }
 
   &__visualization-list {
@@ -55,16 +55,18 @@
 @media (min-width: 768px) {
   .method {
     &__content-wrapper {
-      padding-top: 50px;
+      margin-top: 45px;
     }
 
     &__content {
+      width: 645px;
+
       & h3 {
         font-size: 16px;
       }
 
       & p {
-        margin: 20px 0 0;
+        margin: 13px 0 0;
 
         font-size: 14px;
         line-height: 26px;
@@ -72,7 +74,7 @@
     }
 
     &__visualization-wrapper {
-      padding-top: 40px;
+      margin-top: 35px;
     }
 
     &__visualization-item {
@@ -85,13 +87,13 @@
   }
 }
 
-@media (min-width: 768px) {
-  .method {
-    &__content {
-      width: 640px;
-    }
-  }
-}
+// @media (min-width: 768px) {
+//   .method {
+//     &__content {
+//       width: 640px;
+//     }
+//   }
+// }
 
 @media (min-width: 950px) {
   .method {

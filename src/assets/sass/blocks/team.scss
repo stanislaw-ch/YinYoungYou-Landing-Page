@@ -22,7 +22,7 @@
   }
 
   &__visualization-wrapper {
-    padding-top: 55px;
+    margin-top: 55px;
   }
 
   &__visualization-list {
@@ -63,25 +63,25 @@
 @media (min-width: 768px) {
   .team {
     &__content-wrapper {
-      padding-top: 70px;
+      margin-top: 61px;
     }
 
     &__content {
       text-align: center;
 
       & h3 {
-        margin: 0 0 10px;
+        margin: 0 0 4px;
 
-        font-size: 16px;
+        font-size: 14px;
       }
 
       & b {
-        font-size: 16px;
+        font-size: 14px;
       }
     }
 
     &__visualization-wrapper {
-      padding-top: 50px;
+      margin-top: 45px;
     }
 
     &__visualization-list {
@@ -101,16 +101,18 @@
       }
 
       & dl {
-        margin: 10px 0 0;
+        margin: 16px 0 0;
       }
 
       & dt {
         font-size: 16px;
+        line-height: 16px;
       }
 
       & dd {
-        margin: 5px 0 0;
+        margin: 3px 0 0;
         font-size: 14px;
+        line-height: 19px;
       }
     }
   }

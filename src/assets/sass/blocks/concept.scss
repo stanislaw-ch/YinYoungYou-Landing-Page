@@ -16,14 +16,14 @@
 
   &__content p {
     margin: 30px 0 0;
-    line-height: 26px;
+    line-height: 21px;
   }
 }
 
 @media (min-width: 768px) {
   .concept {
     &__content-wrapper {
-      padding-top: 70px;
+      margin-top: 70px;
     }
 
     &__content {
@@ -33,7 +33,7 @@
     }
 
     &__content p {
-      margin: 20px 0 0;
+      margin: 14px 0 0;
 
       font-size: 14px;
       line-height: 26px;
