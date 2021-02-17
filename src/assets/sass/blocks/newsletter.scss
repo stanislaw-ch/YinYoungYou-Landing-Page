@@ -161,7 +161,7 @@
     }
 
     &__content-wrapper {
-      padding: 66px 0 115px;
+      padding: 66px 0 95px;
     }
 
     &__content {
@@ -183,45 +183,11 @@
 
       & form {
         width: 485px;
-        margin-top: 11px;
+        margin-top: 31px;
       }
     }
   }
 }
-
-// @media (min-width: 1920px) {
-//   .newsletter {
-    // &__bg {
-    //   top: calc(100% - 1970px);
-    //   width: 1350px;
-    //   height: 2500px;
-
-    //   background-position: 140px 0;
-    //   background-size: 1350px auto;
-    // }
-
-//     &__content {
-//       padding: 90px 0 180px;
-
-//       & h3 {
-//         font-size: 38px;
-//         line-height: 38px;
-//       }
-//     }
-
-//     &__subscribe {
-//       width: 730px;
-//       padding-top: 30px;
-//     }
-
-//     & p {
-//       font-size: 20px;
-//       line-height: 26px;
-//       padding-bottom: 56px;
-//       width: 810px;
-//     }
-//   }
-// }
 
 @media (min-width: 1920px) {
   .newsletter {
@@ -234,9 +200,11 @@
       background-size: 1350px auto;
     }
 
-    &__content {
-      padding: 90px 0 180px;
+    &__content-wrapper {
+      padding: 90px 0 173px;
+    }
 
+    &__content {
       & h3 {
         font-size: 38px;
         line-height: 38px;
@@ -245,14 +213,19 @@
 
     &__subscribe {
       width: 730px;
-      padding-top: 30px;
-    }
+      margin-top: 34px;
 
-    & p {
-      // font-size: 20px;
-      line-height: 26px;
-      padding-bottom: 56px;
-      width: 810px;
+      & p {
+        // font-size: 20px;
+        line-height: 26px;
+        padding-bottom: 56px;
+        width: 810px;
+      }
+
+      & form {
+        width: 726px;
+        margin-top: 8px;
+      }
     }
   }
 }

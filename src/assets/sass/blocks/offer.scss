@@ -484,7 +484,7 @@
     }
 
     &__content-wrapper {
-      padding: 109px 0 0;
+      margin: 109px 0 0;
     }
 
     &__logo {
@@ -588,7 +588,7 @@
   .offer {
     // max-width: 1920px;
     // margin: 0 auto;
-    padding-bottom: 170px;
+    padding-bottom: 174px;
 
     &__bg {
       width: 1610px;
@@ -599,7 +599,7 @@
     }
 
     &__content-wrapper {
-      padding: 120px 0 0;
+      margin: 134px 0 0;
     }
 
     &__logo {
@@ -611,6 +611,7 @@
     }
 
     &__content {
+      padding-right: 380px;
       // width: 785px;
 
       & h3 {
@@ -618,7 +619,7 @@
       }
 
       & p {
-        margin: 50px 0 0;
+        margin: 59px 0 0;
         font-size: 20px;
         line-height: 26px;
 
@@ -632,7 +633,7 @@
 
     &__subscribe {
       width: 730px;
-      margin-top: -124px;
+      margin-top: -127px;
 
       & p {
         font-size: 18px;
@@ -640,7 +641,7 @@
 
       & form {
         width: 730px;
-        margin-top: 25px;
+        margin-top: 42px;
       }
     }
   }

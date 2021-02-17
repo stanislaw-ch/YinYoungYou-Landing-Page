@@ -455,13 +455,13 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 1920px) {
   .concept__content-wrapper {
-    padding-top: 310px; }
+    margin-top: 326px; }
   .concept__content {
     width: auto; }
     .concept__content h3 {
       font-size: 38px; }
   .concept__content p {
-    margin: 45px 0 0;
+    margin: 57px 0 0;
     font-size: 20px;
     line-height: 26px; } }
 
@@ -614,15 +614,15 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 1920px) {
   .method__content-wrapper {
-    padding-top: 120px; }
+    margin-top: 138px; }
   .method__content h3 {
     font-size: 38px; }
   .method__content p {
-    margin: 45px 0 0;
+    margin: 56px 0 0;
     font-size: 20px;
     line-height: 26px; }
   .method__visualization-wrapper {
-    padding-top: 65px; }
+    margin-top: 71px; }
   .method__visualization-item img {
     height: 198px; } }
 
@@ -708,7 +708,7 @@ input[type="radio"].visually-hidden {
     background-position: 87px 0;
     background-size: 900px auto; }
   .newsletter__content-wrapper {
-    padding: 66px 0 115px; }
+    padding: 66px 0 95px; }
   .newsletter__content h3 {
     font-size: 25px; }
   .newsletter__subscribe {
@@ -720,7 +720,7 @@ input[type="radio"].visually-hidden {
       width: auto; }
     .newsletter__subscribe form {
       width: 485px;
-      margin-top: 11px; } }
+      margin-top: 31px; } }
 
 @media (min-width: 1920px) {
   .newsletter__bg {
@@ -729,18 +729,21 @@ input[type="radio"].visually-hidden {
     height: 2500px;
     background-position: 140px 0;
     background-size: 1350px auto; }
-  .newsletter__content {
-    padding: 90px 0 180px; }
-    .newsletter__content h3 {
-      font-size: 38px;
-      line-height: 38px; }
+  .newsletter__content-wrapper {
+    padding: 90px 0 173px; }
+  .newsletter__content h3 {
+    font-size: 38px;
+    line-height: 38px; }
   .newsletter__subscribe {
     width: 730px;
-    padding-top: 30px; }
-  .newsletter p {
-    line-height: 26px;
-    padding-bottom: 56px;
-    width: 810px; } }
+    margin-top: 34px; }
+    .newsletter__subscribe p {
+      line-height: 26px;
+      padding-bottom: 56px;
+      width: 810px; }
+    .newsletter__subscribe form {
+      width: 726px;
+      margin-top: 8px; } }
 
 .offer__content-wrapper {
   margin: 20px 0 0; }
@@ -1037,7 +1040,7 @@ input[type="radio"].visually-hidden {
       height: auto;
       padding-top: 0; }
     .offer__content-wrapper {
-      padding: 109px 0 0; }
+      margin: 109px 0 0; }
     .offer__logo {
       width: 28%;
       margin-right: 4px; }
@@ -1084,34 +1087,36 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 1920px) {
   .offer {
-    padding-bottom: 170px; }
+    padding-bottom: 174px; }
     .offer__bg {
       width: 1610px;
       height: 1500px;
       background-position: 1315px -408px;
       background-size: 1610px auto; }
     .offer__content-wrapper {
-      padding: 120px 0 0; }
+      margin: 134px 0 0; }
     .offer__logo {
       margin-right: 0; }
       .offer__logo img {
         height: 485px; }
-    .offer__content h3 {
-      font-size: 44px; }
-    .offer__content p {
-      margin: 50px 0 0;
-      font-size: 20px;
-      line-height: 26px; }
-      .offer__content p br {
-        margin-top: 30px; }
+    .offer__content {
+      padding-right: 380px; }
+      .offer__content h3 {
+        font-size: 44px; }
+      .offer__content p {
+        margin: 59px 0 0;
+        font-size: 20px;
+        line-height: 26px; }
+        .offer__content p br {
+          margin-top: 30px; }
     .offer__subscribe {
       width: 730px;
-      margin-top: -124px; }
+      margin-top: -127px; }
       .offer__subscribe p {
         font-size: 18px; }
       .offer__subscribe form {
         width: 730px;
-        margin-top: 25px; } }
+        margin-top: 42px; } }
 
 .page-footer {
   background-color: #f7f7f7; }
@@ -1193,13 +1198,13 @@ input[type="radio"].visually-hidden {
   .page-footer__logo img {
     width: 80px; }
   .page-footer__info-list {
-    margin: 75px 0 0; }
+    margin: 82px 0 0; }
   .page-footer__info-item {
     width: 185px; }
     .page-footer__info-item a {
       font-size: 22px; }
   .page-footer__social {
-    padding: 110px 0 0; } }
+    margin: 110px 0 0; } }
 
 .page-header {
   position: sticky;
@@ -1259,7 +1264,8 @@ input[type="radio"].visually-hidden {
   .social__item {
     width: 185px; }
     .social__item svg {
-      height: 65px; } }
+      height: 65px;
+      width: 65px; } }
 
 .sponsors__content-wrapper {
   margin-top: 114px;
@@ -1335,14 +1341,14 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 1920px) {
   .sponsors__content-wrapper {
-    padding-top: 200px;
-    margin-bottom: 350px; }
+    margin-top: 196px;
+    margin-bottom: 353px; }
   .sponsors__content h3 {
     font-size: 22px; }
   .sponsors__visualization-wrapper {
-    padding-top: 70px; }
+    margin-top: 74px; }
   .sponsors__visualization-item {
-    width: 265px;
+    width: 320px;
     height: 180px; }
     .sponsors__visualization-item img {
       max-height: 180px; } }
@@ -1413,7 +1419,7 @@ input[type="radio"].visually-hidden {
     height: 31px; }
   .subscribe button {
     min-width: 119px;
-    font-size: 10px; } }
+    font-size: 14px; } }
 
 @media (min-width: 1280px) {
   .subscribe__fields-wrapper {
@@ -1560,28 +1566,28 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 1920px) {
   .team__content-wrapper {
-    padding-top: 310px; }
+    margin-top: 339px; }
   .team__content h3 {
-    margin: 0 0 20px;
+    margin: 0 0 16px;
     font-size: 38px;
     line-height: 47px; }
   .team__content b {
     font-size: 38px;
     line-height: 47px; }
   .team__visualization-wrapper {
-    padding-top: 110px; }
+    margin-top: 110px; }
   .team__visualization-item {
     width: 400px; }
     .team__visualization-item img {
       width: auto;
       height: 400px; }
     .team__visualization-item dl {
-      margin: 40px 0 0; }
+      margin: 35px 0 0; }
     .team__visualization-item dt {
       font-size: 40px;
       line-height: 50px; }
     .team__visualization-item dd {
-      margin: 15px 0 0;
+      margin: 11px 0 0;
       font-size: 26px;
       line-height: 34px; } }
 

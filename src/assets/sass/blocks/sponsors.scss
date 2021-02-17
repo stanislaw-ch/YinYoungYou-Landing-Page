@@ -123,9 +123,9 @@
 @media (min-width: 1920px) {
   .sponsors {
     &__content-wrapper {
-      padding-top: 200px;
+      margin-top: 196px;
       // padding-bottom: 0;
-      margin-bottom: 350px;
+      margin-bottom: 353px;
     }
 
     &__content {
@@ -135,11 +135,11 @@
     }
 
     &__visualization-wrapper {
-      padding-top: 70px;
+      margin-top: 74px;
     }
 
     &__visualization-item {
-      width: 265px;
+      width: 320px;
       height: 180px;
 
       & img {
