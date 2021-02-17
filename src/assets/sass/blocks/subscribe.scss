@@ -108,7 +108,7 @@
 
     &__fields-wrapper {
       height: 31px;
-      padding-top: 16px;
+      // padding-top: 16px;
     }
 
     & button {
@@ -140,7 +140,7 @@
   }
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1920px) {
   .subscribe {
     // &__message {
     //   width: 354px;

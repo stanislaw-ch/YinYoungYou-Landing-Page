@@ -386,7 +386,7 @@
 
       & form {
         width: 389px;
-        margin-top: 0;
+        margin-top: 16px;
       }
     }
   }
@@ -451,7 +451,7 @@
 
       & form {
         width: 389px;
-        margin-top: 0;
+        margin-top: 16px;
       }
     }
   }
@@ -467,29 +467,38 @@
 
 @media (min-width: 1280px) {
   .offer {
-    padding-bottom: 38px;
+    padding-bottom: 41px;
 
     &__bg {
       width: 984px;
+      height: 1500px;
 
       background-position: 801px -182px;
       background-size: 984px auto;
     }
 
+    &__wrapper {
+      height: auto;
+      // height: calc(100vh - 90px);
+      padding-top: 0;
+    }
+
     &__content-wrapper {
-      padding: 107px 0 0;
+      padding: 109px 0 0;
     }
 
     &__logo {
+      width: 28%;
       margin-right: 4px;
 
-      & img {
-        height: 325px;
-      }
+      // & img {
+      //   height: 325px;
+      // }
     }
 
     &__content {
-      width: 525px;
+      width: 72%;
+      padding-right: 280px;
 
       & h3 {
         font-size: 29px;
@@ -512,15 +521,70 @@
       width: 505px;
       margin-top: 47px;
 
+      & p {
+        margin: 0;
+      }
+
       & form {
         width: 485px;
-        margin-top: 4px;
+        margin-top: 19px;
       }
     }
   }
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1300px) {
+  .offer {
+    &__subscribe {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: 1450px) {
+  .offer {
+    &__content {
+      // width: 72%;
+      padding-right: 320px;
+    }
+
+    &__subscribe {
+      margin-top: -20px;
+    }
+  }
+}
+
+@media (min-width: 1550px) {
+  .offer {
+    &__content {
+      // width: 72%;
+      padding-right: 380px;
+    }
+
+    &__subscribe {
+      margin-top: -60px;
+    }
+  }
+}
+
+@media (min-width: 1750px) {
+  .offer {
+    &__logo {
+      // width: 28%;
+    }
+
+    &__content {
+      // width: 72%;
+      padding-right: 480px;
+    }
+
+    &__subscribe {
+      // margin-top: -60px;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
   .offer {
     // max-width: 1920px;
     // margin: 0 auto;
@@ -547,7 +611,7 @@
     }
 
     &__content {
-      width: 785px;
+      // width: 785px;
 
       & h3 {
         font-size: 44px;

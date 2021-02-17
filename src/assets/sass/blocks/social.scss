@@ -32,7 +32,17 @@
   }
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1280px) {
+  .social {
+    &__item {
+      & svg {
+        height: 43px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1920px) {
   .social {
     &__item {
       width: 185px;

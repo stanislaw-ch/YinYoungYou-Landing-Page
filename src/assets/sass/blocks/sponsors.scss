@@ -95,9 +95,8 @@
 @media (min-width: 1280px) {
   .sponsors {
     &__content-wrapper {
-      padding-top: 150px;
-      // padding-bottom: 0;
-      margin-bottom: 180px;
+      margin-top: 134px;
+      margin-bottom: 181px;
     }
 
     &__content {
@@ -107,11 +106,11 @@
     }
 
     &__visualization-wrapper {
-      padding-top: 50px;
+      margin-top: 49px;
     }
 
     &__visualization-item {
-      width: 183px;
+      width: 221px;
       height: 124px;
 
       & img {
@@ -121,7 +120,7 @@
   }
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1920px) {
   .sponsors {
     &__content-wrapper {
       padding-top: 200px;

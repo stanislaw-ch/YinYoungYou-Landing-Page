@@ -128,7 +128,7 @@
     }
 
     &__info-list {
-      margin: 50px 0 0;
+      margin: 43px 0 0;
     }
 
     &__info-item {
@@ -138,12 +138,12 @@
     }
 
     &__social {
-      padding: 75px 0 0;
+      margin: 73px 0 0;
     }
   }
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1920px) {
   .page-footer {
     &__content-wrapper {
       padding: 60px 0;
