@@ -107,8 +107,13 @@
     // }
 
     &__fields-wrapper {
-      height: 30px;
+      height: 31px;
       padding-top: 16px;
+    }
+
+    & button {
+      min-width: 119px;
+      font-size: 10px;
     }
   }
 }

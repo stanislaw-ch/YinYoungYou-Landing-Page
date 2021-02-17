@@ -90,21 +90,21 @@
 @media (min-width: 1024px) {
   .method {
     &__content {
-      width: 855px;
+      // width: 855px;
 
       & h3 {
         font-size: 20px;
       }
 
       & p {
-        margin: 30px 0 0;
+        margin: 26px 0 0;
 
         font-size: 16px;
       }
     }
 
     &__visualization-wrapper {
-      padding-top: 50px;
+      margin-top: 50px;
     }
 
     &__visualization-item {
@@ -116,7 +116,7 @@
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1280px) {
   .method {
     &__content-wrapper {
       padding-top: 150px;
@@ -150,13 +150,13 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .method {
-    &__content {
-      width: 1070px;
-    }
-  }
-}
+// @media (min-width: 1200px) {
+//   .method {
+//     &__content {
+//       width: 1070px;
+//     }
+//   }
+// }
 
 @media (min-width: 1400px) {
   .method {

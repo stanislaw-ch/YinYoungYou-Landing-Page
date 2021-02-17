@@ -72,13 +72,13 @@
 @media (min-width: 1024px) {
   .sponsors {
     &__content-wrapper {
-      padding-top: 100px;
+      margin-top: 101px;
       padding-bottom: 0;
       margin-bottom: 145px;
     }
 
     &__visualization-wrapper {
-      padding-top: 40px;
+      margin-top: 38px;
     }
 
     &__visualization-item {
@@ -92,7 +92,7 @@
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1280px) {
   .sponsors {
     &__content-wrapper {
       padding-top: 150px;

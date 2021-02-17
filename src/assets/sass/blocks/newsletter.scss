@@ -122,9 +122,11 @@
       background-size: 710px auto;
     }
 
-    &__content {
+    &__content-wrapper {
       padding: 48px 0 52px;
+    }
 
+    &__content {
       & h3 {
         font-size: 19px;
       }
@@ -132,17 +134,22 @@
 
     &__subscribe {
       width: 390px;
-      padding-top: 19px;
+      margin-top: 19px;
     }
 
     & p {
-      padding-bottom: 33px;
+      margin: 0;
+      // padding-bottom: 33px;
       width: 435px;
+    }
+
+    & form {
+      margin-top: 32px;
     }
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1280px) {
   .newsletter {
     &__bg {
       top: calc(100% - 1306px);
