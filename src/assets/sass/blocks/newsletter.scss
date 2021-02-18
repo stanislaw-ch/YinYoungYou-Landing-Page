@@ -12,7 +12,8 @@
     width: 320px;
     height: 500px;
 
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.1) 90%, rgba(255, 255, 255, 1)), url("../img/bg-tuerkis@1x.png");
+    // background-image: linear-gradient(to left, rgba(255, 255, 255, 0.1) 90%, rgba(255, 255, 255, 1)), url("../img/bg-tuerkis@1x.png");
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.1) 90%, rgba(255, 255, 255, 1)), -webkit-image-set(url("../img/bg-tuerkis@1x.png") 1x, url("../img/bg-tuerkis@2x.png") 2x,);
     background-position: 43px 0;
     background-size: 320px auto;
     background-repeat: no-repeat;
@@ -172,10 +173,10 @@
 
     &__subscribe {
       width: 500px;
-      margin-top: 25px;
+      margin-top: 23px;
 
       & p {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 24px;
         // padding-bottom: 18px;
         width: auto;

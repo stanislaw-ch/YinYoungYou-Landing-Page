@@ -1,4 +1,5 @@
 const path = require(`path`);
+const fs = require(`fs`);
 const HTMLWebpackPlugin = require(`html-webpack-plugin`);
 const {CleanWebpackPlugin} = require(`clean-webpack-plugin`);
 const CopyWebpackPlugin = require(`copy-webpack-plugin`);
@@ -10,6 +11,11 @@ const webpack = require(`webpack`);
 
 const isDev = process.env.NODE_ENV === `development`;
 const isProd = !isDev;
+
+const PAGES_DIR = path.resolve(__dirname, `src`);
+const PAGES = fs
+  .readdirSync(PAGES_DIR)
+  .filter((fileName) => fileName.endsWith(`.html`));
 
 const optimization = () => {
   const config = {
@@ -64,7 +70,7 @@ const jsLoaders = () => {
 
 module.exports = {
   target: process.env.NODE_ENV === `development` ? `web` : `browserslist`,
-  context: path.resolve(__dirname, `src`),
+  context: PAGES_DIR,
   mode: `development`,
   entry: {
     main: [`@babel/polyfill`, `./index.js`]
@@ -86,12 +92,22 @@ module.exports = {
   },
   devtool: isDev ? `source-map` : false,
   plugins: [
-    new HTMLWebpackPlugin({
-      template: `./index.html`,
-      minify: {
-        collapseWhitespace: isProd
-      }
-    }),
+    // new HTMLWebpackPlugin({
+    //   template: `./index.html`,
+    // minify: {
+    //   collapseWhitespace: isProd
+    // }
+    // }),
+    ...PAGES.map(
+        (page) =>
+          new HTMLWebpackPlugin({
+            template: `${PAGES_DIR}/${page}`,
+            filename: `./${page}`,
+            minify: {
+              collapseWhitespace: isProd
+            }
+          })
+    ),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [
