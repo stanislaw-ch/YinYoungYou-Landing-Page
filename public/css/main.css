@@ -1675,7 +1675,11 @@ input[type="radio"].visually-hidden {
     color: #ffffff;
     background-color: #ff5f0e;
     border-radius: 6px;
-    border: none; }
+    border: none;
+    cursor: pointer; }
+    .contact__form-button:hover {
+      background-color: #42c022;
+      transition: all 400ms ease; }
 
 @media (min-width: 768px) {
   .contact__bg {

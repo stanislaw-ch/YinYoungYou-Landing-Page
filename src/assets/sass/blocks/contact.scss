@@ -132,6 +132,13 @@
     background-color: #ff5f0e;
     border-radius: 6px;
     border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #42c022;
+      // background-color: #20ca25;
+      transition: all 400ms ease;
+    }
   }
 }
 
