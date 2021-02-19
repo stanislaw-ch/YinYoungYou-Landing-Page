@@ -493,12 +493,16 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 1280px) {
   .container {
-    padding: 0 80px 0 80px; } }
+    padding: 0 80px 0 80px; }
+    .container--aup {
+      max-width: 1280px; } }
 
 @media (min-width: 1600px) {
   .container {
     max-width: 1920px;
-    padding: 0 150px 0 150px; } }
+    padding: 0 150px 0 150px; }
+    .container--aup {
+      max-width: 1280px; } }
 
 .logo img {
   display: block; }
@@ -1855,6 +1859,39 @@ input[type="radio"].visually-hidden {
     width: 270px;
     height: 66px;
     font-size: 24px; } }
+
+.aup {
+  padding: 50px 0; }
+  .aup h3 {
+    margin: 0 0 20px;
+    font-family: "Info", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 35px;
+    text-transform: uppercase;
+    text-align: center; }
+  .aup__content-wrapper p {
+    font-size: 14px; }
+    .aup__content-wrapper p a {
+      color: #000000;
+      font-weight: 700; }
+  .aup__content-wrapper b {
+    font-family: "Info", "Arial", sans-serif;
+    font-weight: 500; }
+    .aup__content-wrapper b + p a {
+      margin-bottom: 0; }
+  .aup__content-wrapper a {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500; }
+  .aup__title {
+    margin: 0;
+    font-family: "Info", "Arial", sans-serif;
+    font-weight: 700; }
+  .aup__sub-title {
+    margin: 0; }
 
 
 /*# sourceMappingURL=main.css.map*/
