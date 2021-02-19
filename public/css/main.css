@@ -1873,19 +1873,16 @@ input[type="radio"].visually-hidden {
   .aup__content-wrapper p {
     font-size: 14px; }
     .aup__content-wrapper p a {
-      color: #000000;
-      font-weight: 700; }
+      color: #000000; }
   .aup__content-wrapper b {
     font-family: "Info", "Arial", sans-serif;
     font-weight: 500; }
     .aup__content-wrapper b + p a {
       margin-bottom: 0; }
   .aup__content-wrapper a {
-    display: inline-block;
     margin-bottom: 10px;
     color: #000000;
-    font-size: 14px;
-    font-weight: 500; }
+    font-size: 14px; }
   .aup__title {
     margin: 0;
     font-family: "Info", "Arial", sans-serif;
