@@ -98,7 +98,7 @@
       // width: 440px;
       margin-top: 12px;
 
-      & p {
+      & > p {
         width: 330px;
         font-size: 14px;
         line-height: 19px;
@@ -106,7 +106,8 @@
 
       & form {
         margin-top: 18px;
-        width: 424px;
+        width: 100%;
+        // width: 424px;
       }
     }
   }
@@ -138,7 +139,7 @@
       margin-top: 19px;
     }
 
-    & p {
+    & > p {
       margin: 0;
       // padding-bottom: 33px;
       width: 435px;
@@ -175,7 +176,7 @@
       width: 500px;
       margin-top: 23px;
 
-      & p {
+      & > p {
         font-size: 16px;
         line-height: 24px;
         // padding-bottom: 18px;
@@ -183,7 +184,8 @@
       }
 
       & form {
-        width: 485px;
+        width: 100%;
+        // width: 485px;
         margin-top: 31px;
       }
     }
@@ -216,7 +218,7 @@
       width: 730px;
       margin-top: 34px;
 
-      & p {
+      & > p {
         // font-size: 20px;
         line-height: 26px;
         padding-bottom: 56px;
@@ -224,7 +226,8 @@
       }
 
       & form {
-        width: 726px;
+        width: 100%;
+        // width: 726px;
         margin-top: 8px;
       }
     }

@@ -148,7 +148,7 @@ module.exports = {
             options: {
               sourceMap: true
             }
-          }
+          },
         ]
       },
       {
@@ -173,6 +173,19 @@ module.exports = {
             options: {
               name: `[name].[ext]`,
               outputPath: `fonts`,
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(php)$/,
+        // exclude: /img/,
+        use: [
+          {
+            loader: `file-loader`,
+            options: {
+              name: `[name].[ext]`,
+              // outputPath: `fonts`,
             }
           }
         ]

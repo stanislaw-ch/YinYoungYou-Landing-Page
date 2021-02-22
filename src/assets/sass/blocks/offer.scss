@@ -38,7 +38,7 @@
   }
 }
 
-@media (min-width: 375px) and (orientation: portrait) {
+@media (min-width: 414px) and (orientation: portrait) {
   .offer {
     position: relative;
     overflow: hidden;
@@ -107,9 +107,9 @@
       width: 100%;
       margin-top: auto;
       // margin-top: 14%;
-      margin-bottom: 2%;
+      margin-bottom: 3%;
 
-      & p {
+      & > p {
         margin-top: auto;
         margin-bottom: 0;
       }
@@ -235,7 +235,8 @@
       }
 
       & form {
-        width: 424px;
+        width: 100%;
+        // width: 424px;
         margin-top: 31px;
       }
     }
@@ -322,7 +323,8 @@
       }
 
       & form {
-        width: 424px;
+        width: 100%;
+        // width: 424px;
         margin-top: 31px;
       }
     }
@@ -527,7 +529,8 @@
       }
 
       & form {
-        width: 485px;
+        width: 100%;
+        // width: 485px;
         margin-top: 19px;
       }
     }
