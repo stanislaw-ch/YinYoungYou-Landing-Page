@@ -43,7 +43,8 @@
 
   &__input-message {
     position: absolute;
-    bottom: -15px;
+    top: -17px;
+    // bottom: -15px;
     left: 0;
     display: block;
 
@@ -72,6 +73,33 @@
       &:focus {
         border: 2px solid #09b92b;
       }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .form {
+    &__input-message {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .form {
+    &__button {
+      &--success {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .form {
+    &__input-message {
+      top: -23px;
+      font-size: 16px;
     }
   }
 }

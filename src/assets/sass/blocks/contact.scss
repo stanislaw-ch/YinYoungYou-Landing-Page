@@ -241,6 +241,12 @@
       &:last-of-type {
         padding-top: 0;
       }
+
+      & .form__input-message {
+        top: 15px;
+        right: auto;
+        left: 0;
+      }
     }
 
     &__form-input {
@@ -307,6 +313,10 @@
 
       & label {
         font-size: 12px;
+      }
+
+      & .form__input-message {
+        top: 17px;
       }
     }
 
@@ -382,6 +392,10 @@
 
       & label {
         font-size: 16px;
+      }
+
+      & .form__input-message {
+        top: 19px;
       }
     }
 
@@ -465,6 +479,10 @@
 
       & label {
         font-size: 22px;
+      }
+
+      & .form__input-message {
+        top: 27px;
       }
     }
 

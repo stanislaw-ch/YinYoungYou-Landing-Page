@@ -73,7 +73,7 @@ export default class Validator {
         this.setStatus(field, null, `success`);
         this.errors = 0;
       } else {
-        this.setStatus(field, `Bitte gib eine gültige E-mail Adresse an.`, `error`);
+        this.setStatus(field, `Bitte gib eine gültige E-mail an.`, `error`);
         // this.setStatus(field, `Please enter valid email address`, `error`);
         this.errors++;
       }

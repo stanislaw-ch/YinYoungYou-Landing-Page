@@ -157,7 +157,7 @@ var Validator = /*#__PURE__*/function () {
           this.setStatus(field, null, "success");
           this.errors = 0;
         } else {
-          this.setStatus(field, "Bitte gib eine g\xFCltige E-mail Adresse an.", "error"); // this.setStatus(field, `Please enter valid email address`, `error`);
+          this.setStatus(field, "Bitte gib eine g\xFCltige E-mail an.", "error"); // this.setStatus(field, `Please enter valid email address`, `error`);
 
           this.errors++;
         }
@@ -261,7 +261,7 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
     if(true) {
-      // 1614017209722
+      // 1614019852451
       var cssReload = __webpack_require__(/*! ../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"publicPath":"../","locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -418,7 +418,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("7b42e98c23d058275187")
+/******/ 		__webpack_require__.h = () => ("e28af67a01ed01e3562e")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
