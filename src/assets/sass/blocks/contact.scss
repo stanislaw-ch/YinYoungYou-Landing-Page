@@ -229,14 +229,14 @@
       }
     }
 
-    &__form-item-wrapper {
-      display: flex;
-      justify-content: space-between;
+    // &__form-item-wrapper {
+    //   display: flex;
+    //   justify-content: space-between;
 
-      & .contact__form-item:first-of-type {
-        margin-right: 12px;
-      }
-    }
+    //   & .contact__form-item:first-of-type {
+    //     margin-right: 12px;
+    //   }
+    // }
 
     &__form-item {
       width: 100%;
@@ -257,6 +257,19 @@
       width: 100%;
 
       font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: 890px) {
+  .contact {
+    &__form-item-wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      & .contact__form-item:first-of-type {
+        margin-right: 12px;
+      }
     }
   }
 }

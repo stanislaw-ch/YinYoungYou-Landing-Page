@@ -157,7 +157,7 @@ var Validator = /*#__PURE__*/function () {
           this.setStatus(field, null, "success");
           this.errors = 0;
         } else {
-          this.setStatus(field, "Bitte gib eine g\xFCltige E-mail an.", "error"); // this.setStatus(field, `Please enter valid email address`, `error`);
+          this.setStatus(field, "Bitte gib eine g\xFCltige E-mail Adresse an", "error"); // this.setStatus(field, `Please enter valid email address`, `error`);
 
           this.errors++;
         }
@@ -206,8 +206,6 @@ var Validator = /*#__PURE__*/function () {
         // mode: `no-cors`,
         body: JSON.stringify(form)
       }).then(function (response) {
-        console.log(response.status);
-
         if (response.status === StatusCode.OK) {
           var successMessage = _this3.form.querySelector(".form__button");
 
@@ -316,7 +314,7 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
     if(true) {
-      // 1614024769403
+      // 1614030008153
       var cssReload = __webpack_require__(/*! ../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"publicPath":"../","locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -473,7 +471,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("29e21d0a9018ac841c27")
+/******/ 		__webpack_require__.h = () => ("859e1704372ac59dcab4")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

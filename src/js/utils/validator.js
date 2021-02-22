@@ -73,7 +73,7 @@ export default class Validator {
         this.setStatus(field, null, `success`);
         this.errors = 0;
       } else {
-        this.setStatus(field, `Bitte gib eine gültige E-mail an.`, `error`);
+        this.setStatus(field, `Bitte gib eine gültige E-mail Adresse an`, `error`);
         // this.setStatus(field, `Please enter valid email address`, `error`);
         this.errors++;
       }
@@ -122,7 +122,6 @@ export default class Validator {
       // mode: `no-cors`,
       body: JSON.stringify(form),
     }).then((response) => {
-      console.log(response.status);
       if (response.status === StatusCode.OK) {
         const successMessage = this.form.querySelector(`.form__button`);
         successMessage.classList.add(`form__button--success`);

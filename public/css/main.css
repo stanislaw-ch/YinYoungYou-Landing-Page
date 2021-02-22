@@ -1723,11 +1723,6 @@ input[type="radio"].visually-hidden {
     padding-top: 9px; }
     .contact__form form {
       width: 100%; }
-  .contact__form-item-wrapper {
-    display: flex;
-    justify-content: space-between; }
-    .contact__form-item-wrapper .contact__form-item:first-of-type {
-      margin-right: 12px; }
   .contact__form-item {
     width: 100%;
     margin-bottom: 18px; }
@@ -1740,6 +1735,13 @@ input[type="radio"].visually-hidden {
   .contact__form-input {
     width: 100%;
     font-size: 14px; } }
+
+@media (min-width: 890px) {
+  .contact__form-item-wrapper {
+    display: flex;
+    justify-content: space-between; }
+    .contact__form-item-wrapper .contact__form-item:first-of-type {
+      margin-right: 12px; } }
 
 @media (min-width: 1024px) {
   .contact__bg {
