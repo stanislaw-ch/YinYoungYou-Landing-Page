@@ -83,8 +83,12 @@
   &__form {
     padding-top: 17px;
 
-    & .form__message--success {
+    & .form__message {
       justify-content: center;
+
+      &--success {
+        justify-content: center;
+      }
     }
   }
 

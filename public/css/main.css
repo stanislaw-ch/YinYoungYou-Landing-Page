@@ -1636,8 +1636,10 @@ input[type="radio"].visually-hidden {
       background-color: #f9f9f9; }
   .contact__form {
     padding-top: 17px; }
-    .contact__form .form__message--success {
+    .contact__form .form__message {
       justify-content: center; }
+      .contact__form .form__message--success {
+        justify-content: center; }
   .contact__form-item {
     position: relative;
     display: flex;
@@ -1911,11 +1913,10 @@ input[type="radio"].visually-hidden {
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  height: 50px;
   margin-top: 5px;
-  padding: 0 10px;
-  font-size: 14px;
-  font-weight: 700;
+  font-family: "Info", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
   color: #ffffff;
   line-height: 18px; }
   .form__message--error {
@@ -1959,10 +1960,16 @@ input[type="radio"].visually-hidden {
     font-size: 12px; } }
 
 @media (min-width: 1024px) {
+  .form__message {
+    justify-content: flex-start; }
   .form__button--success {
-    width: 100%; } }
+    width: 100%; }
+  .form .form__message {
+    justify-content: flex-start; } }
 
 @media (min-width: 1920px) {
+  .form__message {
+    font-size: 20px; }
   .form__input-message {
     top: -23px;
     font-size: 16px; } }
