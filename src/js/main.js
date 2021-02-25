@@ -86,6 +86,7 @@ if (surveyForm) {
     otherOption.classList.remove(`form__option-item--hidden`);
     otherOption.querySelector(`.form__option-input`).checked = false;
     submitButton.classList.remove(`survey__form-button--hidden`);
+    submitButton.disabled = true;
   });
 
   surveyForm.addEventListener(`submit`, function (evt) {
