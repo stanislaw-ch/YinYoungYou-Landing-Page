@@ -2044,7 +2044,7 @@ input[type="radio"].visually-hidden {
   border-radius: 5px;
   outline: none; }
   .form__option-input:focus {
-    border: 1px solid #707070; }
+    border: 1px solid #bebebe; }
   .form__option-input + label::before {
     content: "";
     box-sizing: border-box;

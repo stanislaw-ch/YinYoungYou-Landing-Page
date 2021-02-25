@@ -16,19 +16,69 @@ if (contactForm) {
 }
 
 const surveyForm = document.querySelector(`.survey form`);
+
 if (surveyForm) {
+  const allCheckboxes = surveyForm.querySelectorAll(`input[type=checkbox]`);
+
   const otherOption = surveyForm.querySelector(`.form__option-item--option-list`);
   const otherOptionInText = surveyForm.querySelector(`.form__option-self`);
 
   const submitButton = surveyForm.querySelector(`.survey__form-button--submit`);
+  const submitOptionButton = surveyForm.querySelector(`.survey__form-button--send`);
   const cancelButton = surveyForm.querySelector(`.survey__form-button--cancel`);
 
   const successMassage = surveyForm.querySelector(`.survey__form-success`);
+
+  const send = function (form, action, method) {
+    const StatusCode = {
+      OK: 200
+    };
+
+    fetch(action, {
+      method,
+      body: form,
+    }).then((response) => {
+      if (response.status === StatusCode.OK) {
+        successMassage.classList.remove(`survey__form-success--hidden`);
+      }
+    });
+  };
+
+  allCheckboxes.forEach((element) => element.addEventListener(`click`, function () {
+    let isChecked = false;
+
+    allCheckboxes.forEach((checkbox) => {
+      if (checkbox.checked === true) {
+        isChecked = true;
+      }
+    });
+
+    if (isChecked) {
+      submitButton.disabled = false;
+    } else {
+      submitButton.disabled = true;
+    }
+
+  }));
 
   otherOption.addEventListener(`click`, function () {
     otherOption.classList.add(`form__option-item--hidden`);
     otherOptionInText.classList.remove(`form__option-self--hidden`);
     submitButton.classList.add(`survey__form-button--hidden`);
+    otherOptionInText.querySelector(`input`).focus();
+
+    submitOptionButton.disabled = true;
+
+    otherOptionInText.addEventListener(`input`, function () {
+      const input = otherOptionInText.querySelector(`input`);
+      let value = input.value;
+
+      if (value.trim() === ``) {
+        submitOptionButton.disabled = true;
+      } else {
+        submitOptionButton.disabled = false;
+      }
+    });
   });
 
   cancelButton.addEventListener(`click`, function () {
@@ -40,6 +90,7 @@ if (surveyForm) {
 
   surveyForm.addEventListener(`submit`, function (evt) {
     evt.preventDefault();
-    successMassage.classList.remove(`survey__form-success--hidden`);
+
+    send(new FormData(surveyForm), surveyForm.action, surveyForm.method);
   });
 }
