@@ -1997,7 +1997,8 @@ input[type="radio"].visually-hidden {
     .form__button--success:focus {
       border: 2px solid #09b92b; }
   .form__button:disabled {
-    background-color: #707070; }
+    background-color: #707070;
+    pointer-events: none; }
 
 .form__option-list {
   margin: 0; }

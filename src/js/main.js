@@ -44,19 +44,19 @@ if (surveyForm) {
     });
   };
 
-  allCheckboxes.forEach((element) => element.addEventListener(`click`, function () {
-    let isChecked = false;
+  allCheckboxes.forEach((element) => element.addEventListener(`click`, function (evt) {
+    if (evt.target.id === `option-7`) {
+      evt.target.checked = false;
+    }
 
-    allCheckboxes.forEach((checkbox) => {
-      if (checkbox.checked === true) {
-        isChecked = true;
-      }
-    });
+    let isChecked = Array.from(allCheckboxes).some((it) => it.checked === true);
 
     if (isChecked) {
       submitButton.disabled = false;
+      submitOptionButton.disabled = false;
     } else {
       submitButton.disabled = true;
+      submitOptionButton.disabled = true;
     }
 
   }));
@@ -66,8 +66,6 @@ if (surveyForm) {
     otherOptionInText.classList.remove(`form__option-self--hidden`);
     submitButton.classList.add(`survey__form-button--hidden`);
     otherOptionInText.querySelector(`input`).focus();
-
-    submitOptionButton.disabled = true;
 
     otherOptionInText.addEventListener(`input`, function () {
       const input = otherOptionInText.querySelector(`input`);
@@ -86,7 +84,8 @@ if (surveyForm) {
     otherOption.classList.remove(`form__option-item--hidden`);
     otherOption.querySelector(`.form__option-input`).checked = false;
     submitButton.classList.remove(`survey__form-button--hidden`);
-    submitButton.disabled = true;
+
+    otherOptionInText.querySelector(`input`).value = ``;
   });
 
   surveyForm.addEventListener(`submit`, function (evt) {
