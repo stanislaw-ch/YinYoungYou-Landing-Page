@@ -2486,7 +2486,7 @@ input[type="radio"].visually-hidden {
   height: 100%;
   font-family: "Info", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   background-color: #f7f7f7;
   border: 5px solid #09b92b;
@@ -2504,7 +2504,9 @@ input[type="radio"].visually-hidden {
     position: relative;
     margin-top: 32px; }
   .survey__form-button {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  .survey__form-success {
+    font-size: 16px; } }
 
 @media (min-width: 1024px) {
   .survey__content {
@@ -2532,7 +2534,9 @@ input[type="radio"].visually-hidden {
     height: 60px;
     margin-top: 30px; }
     .survey__form-button:first-of-type {
-      margin-right: 15px; } }
+      margin-right: 15px; }
+  .survey__form-success {
+    font-size: 20px; } }
 
 @media (min-width: 1280px) {
   .survey__content {
@@ -2547,7 +2551,9 @@ input[type="radio"].visually-hidden {
     .survey__form-button--cancel {
       height: 60px; }
     .survey__form-button--send {
-      height: 60px; } }
+      height: 60px; }
+  .survey__form-success {
+    font-size: 25px; } }
 
 @media (min-width: 1920px) {
   .survey__content {
@@ -2571,7 +2577,9 @@ input[type="radio"].visually-hidden {
       font-size: 28px; }
     .survey__form-button--send {
       height: 60px;
-      font-size: 28px; } }
+      font-size: 28px; }
+  .survey__form-success {
+    font-size: 36px; } }
 
 
 /*# sourceMappingURL=main.css.map*/
