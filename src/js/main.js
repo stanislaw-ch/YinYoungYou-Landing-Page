@@ -49,7 +49,7 @@ if (surveyForm) {
       evt.target.checked = false;
     }
 
-    let isChecked = Array.from(allCheckboxes).some((it) => it.checked === true);
+    let isChecked = Array.from(allCheckboxes).some((checkbox) => checkbox.checked === true);
 
     if (isChecked) {
       submitButton.disabled = false;

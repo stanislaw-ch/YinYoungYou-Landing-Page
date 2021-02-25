@@ -1,6 +1,7 @@
 import './assets/sass/main.scss';
 import './js/main.js';
 import './send.php';
+import './send-umfrage.php';
 require(`./index.html`);
 require(`./contact.html`);
 require(`./impressum.html`);
