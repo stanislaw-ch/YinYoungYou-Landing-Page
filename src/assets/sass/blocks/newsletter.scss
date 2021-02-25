@@ -85,7 +85,7 @@
 @media (min-width: 768px) {
   .newsletter {
     &__content-wrapper {
-      padding: 32px 0 32px;
+      padding: 29px 0 32px;
     }
 
     &__content {
@@ -95,19 +95,24 @@
     }
 
     &__subscribe {
-      // width: 440px;
+      width: 425px;
       margin-top: 12px;
 
       & > p {
-        width: 330px;
-        font-size: 14px;
-        line-height: 19px;
+        width: 340px;
+        margin: 0;
+        font-size: 12px;
+        line-height: 16px;
       }
 
       & form {
-        margin-top: 18px;
+        margin-top: 34px;
         width: 100%;
         // width: 424px;
+
+        // & button {
+        //   min-width: 150px;
+        // }
       }
     }
   }
@@ -135,14 +140,15 @@
     }
 
     &__subscribe {
-      width: 390px;
+      width: 455px;
       margin-top: 19px;
-    }
 
-    & > p {
-      margin: 0;
-      // padding-bottom: 33px;
-      width: 435px;
+      & > p {
+        margin: 0;
+        font-size: 16px;
+        // padding-bottom: 33px;
+        width: 455px;
+      }
     }
 
     & form {
@@ -184,8 +190,8 @@
       }
 
       & form {
-        width: 100%;
-        // width: 485px;
+        // width: 100%;
+        width: 569px;
         margin-top: 31px;
       }
     }
@@ -204,12 +210,12 @@
     }
 
     &__content-wrapper {
-      padding: 90px 0 173px;
+      padding: 94px 0 110px;
     }
 
     &__content {
       & h3 {
-        font-size: 38px;
+        font-size: 34px;
         line-height: 38px;
       }
     }
@@ -220,15 +226,16 @@
 
       & > p {
         // font-size: 20px;
-        line-height: 26px;
+        line-height: 32px;
+        font-size: 24px;
         padding-bottom: 56px;
         width: 810px;
       }
 
       & form {
-        width: 100%;
-        // width: 726px;
-        margin-top: 8px;
+        // width: 100%;
+        width: 730px;
+        margin-top: 29px;
       }
     }
   }

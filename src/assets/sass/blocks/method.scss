@@ -1,27 +1,20 @@
 .method {
   &__content-wrapper {
-    margin-top: 100px;
+    margin-top: 88px;
   }
 
   &__content {
     & h3 {
       margin: 0;
-
-      font-family: "Info", "Arial", sans-serif;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 23px;
-      text-transform: uppercase;
     }
 
     & p {
       margin: 35px 0 0;
-      line-height: 21px;
     }
   }
 
   &__visualization-wrapper {
-    margin-top: 60px;
+    margin-top: 34px;
   }
 
   &__visualization-list {
@@ -55,14 +48,14 @@
 @media (min-width: 768px) {
   .method {
     &__content-wrapper {
-      margin-top: 45px;
+      margin-top: 60px;
     }
 
     &__content {
       width: 100%;
 
       & h3 {
-        font-size: 16px;
+        // font-size: 16px;
       }
 
       & p {
@@ -89,22 +82,26 @@
 
 @media (min-width: 1024px) {
   .method {
+    &__content-wrapper {
+      margin-top: 38px;
+    }
+
     &__content {
       // width: 855px;
 
       & h3 {
-        font-size: 20px;
+        // font-size: 20px;
       }
 
       & p {
-        margin: 26px 0 0;
+        margin: 23px 0 0;
 
-        font-size: 16px;
+        // font-size: 16px;
       }
     }
 
     &__visualization-wrapper {
-      margin-top: 50px;
+      margin-top: 52px;
     }
 
     &__visualization-item {
@@ -119,14 +116,14 @@
 @media (min-width: 1280px) {
   .method {
     &__content-wrapper {
-      margin-top: 111px;
+      margin-top: 76px;
     }
 
     &__content {
       // width: 970px;
 
       & h3 {
-        font-size: 25px;
+        // font-size: 25px;
       }
 
       & p {
@@ -138,7 +135,7 @@
     }
 
     &__visualization-wrapper {
-      margin-top: 100px;
+      margin-top: 79px;
     }
 
     &__visualization-item {
@@ -153,18 +150,18 @@
 @media (min-width: 1920px) {
   .method {
     &__content-wrapper {
-      margin-top: 138px;
+      margin-top: 148px;
     }
 
     &__content {
       // width: 1400px;
 
       & h3 {
-        font-size: 38px;
+        // font-size: 36px;
       }
 
       & p {
-        margin: 56px 0 0;
+        margin: 48px 0 0;
 
         font-size: 20px;
         line-height: 26px;

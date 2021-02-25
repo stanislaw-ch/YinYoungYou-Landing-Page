@@ -14,18 +14,18 @@
     margin-top: 45px;
 
     & h3 {
-      margin: 0;
+    //   margin: 0;
 
-      font-family: "Info", "Arial", sans-serif;
-      font-weight: 400;
-      font-size: 20px;
-      text-transform: uppercase;
+    //   font-family: "Info", "Arial", sans-serif;
+    //   font-weight: 400;
+    //   font-size: 20px;
+    //   text-transform: uppercase;
       text-align: center;
     }
 
-    & p {
-      margin: 30px 0 0;
-    }
+    // & p {
+    //   margin: 30px 0 0;
+    // }
   }
 
   &__subscribe {
@@ -155,7 +155,7 @@
 
 @media (min-width: 768px) and (orientation: portrait) {
   .offer {
-    padding-bottom: 19px;
+    padding-bottom: 8px;
 
     &__bg {
       top: 0;
@@ -174,7 +174,7 @@
     &__content-wrapper {
       flex-direction: row;
       height: 50%;
-      margin: 60px 0 0;
+      margin: 50px 0 0;
     }
 
     &__logo {
@@ -204,15 +204,15 @@
       // padding-right: 40px;
 
       & h3 {
-        margin-top: 0;
-        font-size: 18px;
+        margin: 0;
+        // font-size: 18px;
         text-align: left;
       }
 
       & p {
         margin: 15px 0 0;
-        font-size: 14px;
-        line-height: 26px;
+        // font-size: 14px;
+        // line-height: 26px;
 
         & br {
           margin-top: 0;
@@ -221,13 +221,13 @@
     }
 
     &__subscribe {
-      width: 440px;
+      width: 460px;
       height: 50%;
       // margin-top: auto;
       margin-left: 0;
       margin-right: 0;
       margin-bottom: 0;
-      margin-top: 37px;
+      margin-top: 30px;
 
       & p {
         font-size: 14px;
@@ -271,7 +271,7 @@
       display: flex;
       flex-direction: row;
       height: 50%;
-      margin: 60px 0 0;
+      margin: 50px 0 0;
     }
 
     &__logo {
@@ -293,14 +293,15 @@
       margin-right: 0;
 
       & h3 {
-        font-size: 18px;
+        margin: 0;
+        // font-size: 18px;
         text-align: left;
       }
 
       & p {
         margin: 15px 0 0;
-        font-size: 14px;
-        line-height: 26px;
+        // font-size: 14px;
+        // line-height: 26px;
 
         & br {
           margin-top: 0;
@@ -309,7 +310,7 @@
     }
 
     &__subscribe {
-      width: 440px;
+      width: 460px;
       height: 50%;
       // margin-top: auto;
       margin-left: 0;
@@ -357,7 +358,7 @@
 
 @media (min-width: 1024px) and (orientation: portrait) {
   .offer {
-    padding-bottom: 104px;
+    padding-bottom: 70px;
 
     &__bg {
       width: 790px;
@@ -367,28 +368,32 @@
     }
 
     &__content-wrapper {
-      margin: 83px 0 0;
+      margin: 77px 0 0;
     }
 
     &__content {
       // width: 600px;
 
       & h3 {
-        font-size: 22px;
+        // font-size: 21px;
       }
 
       & p {
         margin: 25px 0 0;
-        font-size: 16px;
+        // font-size: 16px;
+
+        & br {
+          margin-top: 27px;
+        }
       }
     }
 
     &__subscribe {
       width: 390px;
-      margin-top: -58px;
+      margin-top: -30px;
 
       & form {
-        width: 389px;
+        width: 455px;
         margin-top: 16px;
       }
     }
@@ -470,7 +475,7 @@
 
 @media (min-width: 1280px) {
   .offer {
-    padding-bottom: 41px;
+    padding-bottom: 118px;
 
     &__bg {
       width: 984px;
@@ -522,16 +527,16 @@
 
     &__subscribe {
       width: 505px;
-      margin-top: 47px;
+      margin-top: -58px;
 
       & p {
         margin: 0;
       }
 
       & form {
-        width: 100%;
-        // width: 485px;
-        margin-top: 19px;
+        // width: 100%;
+        width: 570px;
+        margin-top: 31px;
       }
     }
   }
@@ -592,7 +597,7 @@
   .offer {
     // max-width: 1920px;
     // margin: 0 auto;
-    padding-bottom: 174px;
+    padding-bottom: 148px;
 
     &__bg {
       width: 1610px;
@@ -603,7 +608,7 @@
     }
 
     &__content-wrapper {
-      margin: 134px 0 0;
+      margin: 125px 0 0;
     }
 
     &__logo {
@@ -623,21 +628,21 @@
       }
 
       & p {
-        margin: 59px 0 0;
+        margin: 47px 0 0;
         font-size: 20px;
         line-height: 26px;
 
         br {
           // display: block;
           // content: "";
-          margin-top: 30px;
+          margin-top: 27px;
         }
       }
     }
 
     &__subscribe {
       width: 730px;
-      margin-top: -127px;
+      margin-top: -117px;
 
       & p {
         font-size: 18px;

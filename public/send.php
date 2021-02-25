@@ -23,7 +23,7 @@ $message = trim($message);
 
 $to = "info@yin-young-you.com";
 
-if (mail($to, "Website Feedback", "User-name: ".$user_name."\r\nE-mail: ".$email."\r\nMessage: \r\n".$message))
+if (mail($to, "Kontakt: Neue Nachricht", "Name: ".$user_name."\r\nE-mail Adresse: ".$email."\r\nNachricht: \r\n".$message))
 
 ?>
 

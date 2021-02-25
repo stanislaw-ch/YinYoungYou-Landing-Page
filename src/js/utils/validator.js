@@ -120,7 +120,7 @@ export default class Validator {
     fetch(action, {
       method,
       // mode: `no-cors`,
-      body: JSON.stringify(form),
+      body: form,
     }).then((response) => {
       if (response.status === StatusCode.OK) {
         const successMessage = this.form.querySelector(`.form__button`);
@@ -213,3 +213,4 @@ export default class Validator {
 //     afterSubmit(data);
 //   });
 // } // Common callback which runs after all Ajax submissions
+

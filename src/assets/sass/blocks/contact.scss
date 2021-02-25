@@ -324,9 +324,13 @@
     &__form-item {
       margin-bottom: 36px;
 
-      &:last-of-type {
+      &--textarea {
         margin-bottom: 12px;
       }
+
+      // &:last-of-type {
+      //   margin-bottom: 12px;
+      // }
 
       & label {
         font-size: 12px;
@@ -402,6 +406,10 @@
 
     &__form-item {
       margin-bottom: 48px;
+
+      &--textarea {
+        margin-bottom: 15px;
+      }
 
       &:last-of-type {
         margin-bottom: 17px;
@@ -489,6 +497,10 @@
 
     &__form-item {
       margin-bottom: 80px;
+
+      &--textarea {
+        margin-bottom: 21px;
+      }
 
       &:last-of-type {
         margin-bottom: 21px;

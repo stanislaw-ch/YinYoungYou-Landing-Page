@@ -39,8 +39,8 @@
 @media (min-width: 600px) {
   .sponsors {
     &__content-wrapper {
-      margin-top: 68px;
-      margin-bottom: 108px;
+      margin-top: 64px;
+      margin-bottom: 73px;
     }
 
     &__visualization-wrapper {
@@ -72,7 +72,7 @@
 @media (min-width: 1024px) {
   .sponsors {
     &__content-wrapper {
-      margin-top: 101px;
+      margin-top: 96px;
       padding-bottom: 0;
       margin-bottom: 145px;
     }
@@ -123,9 +123,9 @@
 @media (min-width: 1920px) {
   .sponsors {
     &__content-wrapper {
-      margin-top: 196px;
+      margin-top: 209px;
       // padding-bottom: 0;
-      margin-bottom: 353px;
+      margin-bottom: 256px;
     }
 
     &__content {
@@ -135,7 +135,7 @@
     }
 
     &__visualization-wrapper {
-      margin-top: 74px;
+      margin-top: 78px;
     }
 
     &__visualization-item {
