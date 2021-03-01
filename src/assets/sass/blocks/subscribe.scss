@@ -27,7 +27,7 @@
     }
 
     & button {
-      min-width: 110px;
+      min-width: 115px;
       height: 100%;
       font-family: "Info", "Arial", sans-serif;
       font-weight: 700;
@@ -39,6 +39,11 @@
 
       &:focus {
         border: 2px solid #09b92b;
+      }
+
+      &:hover {
+        background-color: #09b92b;
+        transition: all 400ms ease;
       }
     }
   }

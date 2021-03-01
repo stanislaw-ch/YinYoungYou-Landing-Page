@@ -96,6 +96,12 @@
       display: none;
     }
   }
+
+  & .form__message {
+    & p {
+      margin: 0 auto;
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -144,7 +150,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      height: 100%;
+      height: 100px;
       width: 49%;
 
       & label {
@@ -229,7 +235,7 @@
       // display: flex;
       // flex-direction: column;
       // justify-content: space-between;
-      // height: 100%;
+      height: 120px;
       // width: 49%;
 
       & label {

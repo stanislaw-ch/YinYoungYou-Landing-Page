@@ -4,8 +4,7 @@ const subscribeForm = document.querySelectorAll(`.subscribe form`);
 const subscribeFields = [`email`];
 
 const contactForm = document.querySelector(`.contact__form form`);
-const contactFields = [`email`, `comment`];
-// const fields = [`username`, `email`, `password`, `password_confirmation`];
+const contactFields = [`email`, `message`];
 
 if (subscribeForm) {
   subscribeForm.forEach((item) => new Validator(item, subscribeFields, `subscribe`).init());
@@ -29,19 +28,26 @@ if (surveyForm) {
 
   const successMassage = surveyForm.querySelector(`.survey__form-success`);
 
-  const send = function (form, action, method) {
-    const StatusCode = {
-      OK: 200
+  const send = (data) => {
+    const formEntries = new FormData(data).entries();
+    const json = Object.assign(...Array.from(formEntries, ([x, y]) => ({[x]: y})));
+
+    let fetchData = {
+      method: `POST`,
+      body: JSON.stringify(json),
+      headers: {"Content-Type": `application/json`}
     };
 
-    fetch(action, {
-      method,
-      body: form,
-    }).then((response) => {
-      if (response.status === StatusCode.OK) {
-        successMassage.classList.remove(`survey__form-success--hidden`);
-      }
-    });
+    fetch(`/send-survey`, fetchData)
+        .then((res) => {
+          console.log(res);
+          if (res.ok) {
+            successMassage.classList.remove(`survey__form-success--hidden`);
+          } else {
+            const errorMessage = data.querySelector(`.form__message--error`);
+            errorMessage.classList.remove(`form__message--hidden`);
+          }
+        });
   };
 
   allCheckboxes.forEach((element) => element.addEventListener(`click`, function (evt) {
@@ -91,6 +97,6 @@ if (surveyForm) {
   surveyForm.addEventListener(`submit`, function (evt) {
     evt.preventDefault();
 
-    send(new FormData(surveyForm), surveyForm.action, surveyForm.method);
+    send(surveyForm);
   });
 }

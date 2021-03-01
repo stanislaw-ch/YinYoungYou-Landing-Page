@@ -57,7 +57,7 @@
             </div>
             <div class="offer__subscribe subscribe">
               <p>Trage hier deine E-Mail-Adresse ein - wir informieren dich gerne, sobald wir starten können:</p>
-              <form action="https://yin-young-you.us7.list-manage.com/subscribe/post?u=d92cca80edf79206bb369080a&amp;id=d3eb4aada4" method="POST" class="form">
+              <form action="/subscribe" method="POST" class="form">
                 <div class="subscribe__fields-wrapper">
                   <span class="visually-hidden">E-mail</span>
                   <input
@@ -71,9 +71,9 @@
                   <span class="form__input-message"></span>
                   <button type="submit" class="form__button">Abonnieren</button>
                 </div>
-                <!-- <div class="form__message form__message--success form__message--hidden">
-                  <p>Vielen Dank! Wir werden dich auf dem Laufenden halten :)</p>
-                </div> -->
+                <div class="form__message form__message--success form__message--hidden">
+                  <p>Prüf bitte deinen Posteingang oder Spam-Ordner, um dein Abonnement zu bestätigen</p>
+                </div>
                 <div class="form__message form__message--error form__message--hidden">
                   <p>Oops! Leider ist etwas Schiefgelaufen :/</p>
                 </div>
@@ -240,41 +240,41 @@
         <h2 class="visually-hidden">Umfrage</h2>
           <div class="survey__content">
             <h3>Deine Meinung ist uns wichtig - Welchen Fokus wünscht du dir für dein Kind?</h3>
-            <form class="form" method="post" action="https://echo.htmlacademy.ru">
+            <form class="form" method="post" action="/send-survey">
               <ul class="form__option-list">
                 <li class="form__option-item">
-                  <input class="visually-hidden form__option-input" type="checkbox" name="option-1" id="option-1">
+                  <input class="visually-hidden form__option-input" type="checkbox" name="option_1" id="option-1">
                   <label for="option-1">Allgemeine Prävention für das psychische Wohlbefinden</label>
                 </li>
                 <li class="form__option-item">
-                  <input class="visually-hidden form__option-input" type="checkbox" name="option-2" id="option-2">
+                  <input class="visually-hidden form__option-input" type="checkbox" name="option_2" id="option-2">
                   <label for="option-2">Psychisch belastete Eltern</label>
                 </li>
                 <li class="form__option-item">
-                  <input class="visually-hidden form__option-input" type="checkbox" name="option-3" id="option-3">
+                  <input class="visually-hidden form__option-input" type="checkbox" name="option_3" id="option-3">
                   <label for="option-3">Mobbing in der Schule</label>
                 </li>
                 <li class="form__option-item">
-                  <input class="visually-hidden form__option-input" type="checkbox" name="option-4" id="option-4">
+                  <input class="visually-hidden form__option-input" type="checkbox" name="option_4" id="option-4">
                   <label for="option-4">Eigene Sexualität</label>
                 </li>
                 <li class="form__option-item">
-                  <input class="visually-hidden form__option-input" type="checkbox" name="option-5" id="option-5">
+                  <input class="visually-hidden form__option-input" type="checkbox" name="option_5" id="option-5">
                   <label for="option-5">Rassismus-Erfahrung</label>
                 </li>
                 <li class="form__option-item">
-                  <input class="visually-hidden form__option-input" type="checkbox" name="option-6" id="option-6">
+                  <input class="visually-hidden form__option-input" type="checkbox" name="option_6" id="option-6">
                   <label for="option-6">Scheidungskinder</label>
                 </li>
                 <li class="form__option-item form__option-item--option-list">
-                  <input class="visually-hidden form__option-input" type="checkbox" name="option-7" id="option-7">
+                  <input class="visually-hidden form__option-input" type="checkbox" name="option_7" id="option-7">
                   <label for="option-7">Eigene Angabe</label>
                 </li>
               </ul>
               <div class="form__option-self form__option-self--hidden">
                 <div class="survey__form-input-wrapper">
                   <label for="option-8">Eigene Angabe (max. 80 Zeichen):</label>
-                  <input class="form__option-input" type="text" name="option-8" id="option-8" maxlength="80">
+                  <input class="form__option-input" type="text" name="option_8" id="option-8" maxlength="80">
                 </div>
                 <div class="survey__form-button-wrapper">
                   <button class="survey__form-button survey__form-button--cancel form__button" type="button">Verwerfen</button>
@@ -283,6 +283,9 @@
               </div>
               <div class="survey__form-success survey__form-success--hidden">Vielen Dank für deine Teilnahme!</div>
               <button class="survey__form-button survey__form-button--submit form__button" type="submit" disabled>Antwort abschicken</button>
+              <div class="form__message form__message--error form__message--hidden">
+                <p>Oops! Leider ist etwas Schiefgelaufen :/</p>
+              </div>
             </form>
           </div>
         </div>
@@ -381,7 +384,7 @@
               <h3>Du möchtest auf dem Laufenden bleiben?</h3>
               <div class="newsletter__subscribe subscribe">
                 <p>Trage hier deine E-Mail-Adresse ein - wir informieren dich gerne, sobald wir starten können:</p>
-                <form action="https://yin-young-you.us7.list-manage.com/subscribe/post?u=d92cca80edf79206bb369080a&amp;id=d3eb4aada4" method="POST" class="form">
+                <form action="/subscribe" method="POST" class="form">
                   <div class="subscribe__fields-wrapper">
                     <span class="visually-hidden">E-mail</span>
                     <input
@@ -395,9 +398,9 @@
                     <span class="form__input-message"></span>
                     <button type="submit" class="form__button">Abonnieren</button>
                   </div>
-                  <!-- <div class="form__message form__message--success form__message--hidden">
-                    <p>Vielen Dank! Wir werden dich auf dem Laufenden halten :)</p>
-                  </div> -->
+                  <div class="form__message form__message--success form__message--hidden">
+                    <p>Prüf bitte deinen Posteingang oder Spam-Ordner, um dein Abonnement zu bestätigen</p>
+                  </div>
                   <div class="form__message form__message--error form__message--hidden">
                     <p>Oops! Leider ist etwas Schiefgelaufen :/</p>
                   </div>

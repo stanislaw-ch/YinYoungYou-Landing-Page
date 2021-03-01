@@ -1411,7 +1411,7 @@ input[type="radio"].visually-hidden {
     background-size: 25px;
     background-repeat: no-repeat; }
   .subscribe__fields-wrapper button {
-    min-width: 110px;
+    min-width: 115px;
     height: 100%;
     font-family: "Info", "Arial", sans-serif;
     font-weight: 700;
@@ -1421,6 +1421,9 @@ input[type="radio"].visually-hidden {
     cursor: pointer; }
     .subscribe__fields-wrapper button:focus {
       border: 2px solid #09b92b; }
+    .subscribe__fields-wrapper button:hover {
+      background-color: #09b92b;
+      transition: all 400ms ease; }
 
 .subscribe__input {
   appearance: none;
@@ -1635,7 +1638,7 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat; }
   .contact__content-wrapper {
     padding: 24px 0;
-    border-bottom: 1px solid #707070; }
+    border-bottom: 1px solid #b1afaf; }
   .contact__content {
     width: 280px; }
     .contact__content h3 {
@@ -1964,8 +1967,7 @@ input[type="radio"].visually-hidden {
   .form__message--error {
     color: #e31919; }
   .form__message--success {
-    background-color: #42c022;
-    border-radius: 5px; }
+    color: #42c022; }
   .form__message--hidden {
     display: none; }
   .form__message p {
@@ -2494,6 +2496,9 @@ input[type="radio"].visually-hidden {
   .survey__form-success--hidden {
     display: none; }
 
+.survey .form__message p {
+  margin: 0 auto; }
+
 @media (min-width: 768px) {
   .survey__content {
     margin-top: 55px; }
@@ -2519,7 +2524,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    height: 100px;
     width: 49%; }
     .survey__form-input-wrapper label {
       padding: 0 0 15px 0; }
@@ -2562,12 +2567,14 @@ input[type="radio"].visually-hidden {
       font-size: 36px; }
   .survey form {
     margin-top: 65px; }
-  .survey__form-input-wrapper label {
-    padding: 0 0 30px 0; }
-  .survey__form-input-wrapper input {
-    height: 60px;
-    padding-left: 30px;
-    font-size: 28px; }
+  .survey__form-input-wrapper {
+    height: 120px; }
+    .survey__form-input-wrapper label {
+      padding: 0 0 30px 0; }
+    .survey__form-input-wrapper input {
+      height: 60px;
+      padding-left: 30px;
+      font-size: 28px; }
   .survey__form-button {
     height: 108px;
     margin-top: 56px;
