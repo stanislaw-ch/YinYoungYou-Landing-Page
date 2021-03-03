@@ -1,5 +1,8 @@
 import './assets/sass/main.scss';
 import './js/main.js';
+import './contact-form.php';
+import './survey.php';
+import './subscribe.php';
 require(`./index.html`);
 require(`./contact.html`);
 require(`./impressum.html`);

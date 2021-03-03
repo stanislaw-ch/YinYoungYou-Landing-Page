@@ -26,29 +26,50 @@ if (surveyForm) {
   const submitOptionButton = surveyForm.querySelector(`.survey__form-button--send`);
   const cancelButton = surveyForm.querySelector(`.survey__form-button--cancel`);
 
-  const successMassage = surveyForm.querySelector(`.survey__form-success`);
+  const send = (form, action, method) => {
+    const successMassage = surveyForm.querySelector(`.survey__form-success`);
+    const errorMessage = surveyForm.querySelector(`.form__message--error`);
 
-  const send = (data) => {
-    const formEntries = new FormData(data).entries();
-    const json = Object.assign(...Array.from(formEntries, ([x, y]) => ({[x]: y})));
-
-    let fetchData = {
-      method: `POST`,
-      body: JSON.stringify(json),
-      headers: {"Content-Type": `application/json`}
+    const StatusCode = {
+      OK: 200
     };
 
-    fetch(`/send-survey`, fetchData)
-        .then((res) => {
-          console.log(res);
-          if (res.ok) {
-            successMassage.classList.remove(`survey__form-success--hidden`);
-          } else {
-            const errorMessage = data.querySelector(`.form__message--error`);
-            errorMessage.classList.remove(`form__message--hidden`);
-          }
-        });
+    fetch(action, {
+      method,
+      body: form,
+    }).then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      if (data === StatusCode.OK) {
+        successMassage.classList.remove(`survey__form-success--hidden`);
+      } else {
+        errorMessage.classList.remove(`form__message--hidden`);
+      }
+    });
   };
+
+  // const send = (data) => {
+  //   const formEntries = new FormData(data).entries();
+  //   const json = Object.assign(...Array.from(formEntries, ([x, y]) => ({[x]: y})));
+
+  //   let fetchData = {
+  //     method: `POST`,
+  //     body: JSON.stringify(json),
+  //     headers: {"Content-Type": `application/json`}
+  //   };
+
+  //   fetch(`/send-survey`, fetchData)
+  //       .then((res) => {
+  //         console.log(res);
+  //         if (res.ok) {
+  //           successMassage.classList.remove(`survey__form-success--hidden`);
+  //         } else {
+  //           const errorMessage = data.querySelector(`.form__message--error`);
+  //           errorMessage.classList.remove(`form__message--hidden`);
+  //         }
+  //       });
+  // };
 
   allCheckboxes.forEach((element) => element.addEventListener(`click`, function (evt) {
     if (evt.target.id === `option-7`) {
@@ -97,6 +118,6 @@ if (surveyForm) {
   surveyForm.addEventListener(`submit`, function (evt) {
     evt.preventDefault();
 
-    send(surveyForm);
+    send(new FormData(surveyForm), surveyForm.action, surveyForm.method);
   });
 }

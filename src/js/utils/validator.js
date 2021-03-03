@@ -22,7 +22,7 @@ export default class Validator {
       });
 
       if (this.errors === 0) {
-        this.send(this.formType);
+        this.send(new FormData(this.form), this.form.action, this.form.method, this.formType);
       }
     });
   }
@@ -104,45 +104,80 @@ export default class Validator {
     }
   }
 
-  send(formType) {
+  send(form, action, method, formType) {
     const successMessageOnButton = this.form.querySelector(`.form__button`);
     const successMessage = this.form.querySelector(`.form__message--success`);
     const errorMessage = this.form.querySelector(`.form__message--error`);
 
-    const formEntries = new FormData(this.form).entries();
-    const json = Object.assign(...Array.from(formEntries, ([x, y]) => ({[x]: y})));
-
-    let fetchData = {
-      method: `POST`,
-      body: JSON.stringify(json),
-      headers: {"Content-Type": `application/json`}
+    const StatusCode = {
+      OK: 200
     };
 
-    if (formType === `subscribe`) {
-      fetch(`/subscribe`, fetchData)
-        .then((res) => {
-          if (res.ok) {
-            successMessageOnButton.classList.add(`form__button--success`);
-            successMessageOnButton.innerText = `Vielen Dank!`;
-            successMessage.classList.remove(`form__message--hidden`);
-          } else {
-            errorMessage.classList.remove(`form__message--hidden`);
-          }
-        });
-    }
+    fetch(action, {
+      method,
+      body: form,
+    }).then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      if (data === StatusCode.OK) {
+        successMessageOnButton.classList.add(`form__button--success`);
 
-    if (formType === `contact`) {
-      fetch(`/send-form`, fetchData)
-        .then((res) => {
-          if (res.ok) {
-            successMessageOnButton.classList.add(`form__button--success`);
-            successMessageOnButton.innerText = `Vielen Dank für deine Nachricht!`;
+        if (formType === `subscribe`) {
+          successMessageOnButton.innerText = `Vielen Dank!`;
+          successMessage.classList.remove(`form__message--hidden`);
+        }
+        if (formType === `contact`) {
+          successMessageOnButton.classList.add(`form__button--success`);
+          successMessageOnButton.innerText = `Vielen Dank für deine Nachricht!`;
 
-            this.form.reset();
-          } else {
-            errorMessage.classList.remove(`form__message--hidden`);
-          }
-        });
-    }
+          this.form.reset();
+        }
+      } else {
+        errorMessage.classList.remove(`form__message--hidden`);
+      }
+    });
   }
+
+  // send(formType) {
+  //   const successMessageOnButton = this.form.querySelector(`.form__button`);
+  //   const successMessage = this.form.querySelector(`.form__message--success`);
+  //   const errorMessage = this.form.querySelector(`.form__message--error`);
+
+  //   const formEntries = new FormData(this.form).entries();
+  //   const json = Object.assign(...Array.from(formEntries, ([x, y]) => ({[x]: y})));
+
+  //   let fetchData = {
+  //     method: `POST`,
+  //     body: JSON.stringify(json),
+  //     headers: {"Content-Type": `application/json`}
+  //   };
+
+  //   if (formType === `subscribe`) {
+  //     fetch(`/subscribe`, fetchData)
+  //       .then((res) => {
+  //         if (res.ok) {
+  //           successMessageOnButton.classList.add(`form__button--success`);
+  //           successMessageOnButton.innerText = `Vielen Dank!`;
+  //           successMessage.classList.remove(`form__message--hidden`);
+  //         } else {
+  //           errorMessage.classList.remove(`form__message--hidden`);
+  //         }
+  //       });
+  //   }
+
+  //   if (formType === `contact`) {
+  //     fetch(`/send-form`, fetchData)
+  //       .then((res) => {
+  //         if (res.ok) {
+  //           successMessageOnButton.classList.add(`form__button--success`);
+  //           successMessageOnButton.innerText = `Vielen Dank für deine Nachricht!`;
+
+  //           this.form.reset();
+  //         } else {
+  //           errorMessage.classList.remove(`form__message--hidden`);
+  //         }
+  //       });
+  //   }
+  // }
 }
