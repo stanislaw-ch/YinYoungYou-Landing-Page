@@ -18,7 +18,7 @@
     margin-top: 5px;
     // padding: 0 10px;
 
-    font-family: "Info", "Arial", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: #ffffff;
@@ -48,7 +48,7 @@
     left: 0;
     display: block;
 
-    font-family: "Info", "Arial", sans-serif;
+    font-family: "info", "Arial", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -103,7 +103,7 @@
       position: relative;
       display: block;
       padding: 15px 0;
-      font-family: "Info", "Arial", sans-serif;
+      font-family: "Roboto", "Arial", sans-serif;
       font-size: 14px;
       // line-height: 17px;
 
@@ -133,7 +133,7 @@
       position: relative;
       display: block;
       padding: 15px 0;
-      font-family: "Info", "Arial", sans-serif;
+      font-family: "Roboto", "Arial", sans-serif;
       font-size: 14px;
       // line-height: 17px;
     }
@@ -250,7 +250,7 @@
 
     &__option-item {
       width: 49%;
-      padding-left: 50px;
+      padding-left: 40px;
 
       &:not(:first-child) {
         margin-top: 15px;
@@ -274,6 +274,28 @@
 
       &--hidden {
         display: none;
+      }
+    }
+
+    &__option-input {
+      & + label::before {
+        // content: "";
+
+        left: -31px;
+        // top: calc(50% - 15px);
+
+        // width: 31px;
+        // height: 31px;
+      }
+
+      &:checked + label::after {
+        // content: "";
+
+        // top: calc(50% - 11px);
+        left: -27px;
+
+        // width: 23px;
+        // height: 23px;
       }
     }
 
@@ -326,7 +348,7 @@
       & + label::before {
         content: "";
 
-        left: -40px;
+        left: -46px;
         top: calc(50% - 15px);
 
         width: 31px;
@@ -337,7 +359,7 @@
         content: "";
 
         top: calc(50% - 11px);
-        left: -36px;
+        left: -42px;
 
         width: 23px;
         height: 23px;
@@ -349,7 +371,7 @@
 @media (min-width: 1920px) {
   .form {
     &__option-item {
-      padding-left: 106px;
+      padding-left: 85px;
 
       &:first-child {
         margin-top: 28px;
@@ -381,7 +403,7 @@
       & + label::before {
         content: "";
 
-        left: -76px;
+        left: -64px;
         top: calc(50% - 26px);
 
         width: 47px;
@@ -392,7 +414,7 @@
         content: "";
 
         top: calc(50% - 19px);
-        left: -69px;
+        left: -57px;
 
         width: 33px;
         height: 33px;

@@ -7,8 +7,7 @@ $user_message = "Allgemeine Prävention für das psychische Wohlbefinden: ".$_PO
                   ."\r\nScheidungskinder: ".$_POST['option_6']
                   ."\r\nEigene Angabe: ".$_POST['option_8'];
 
-// $to = "info@yin-young-you.com";
-$to = "post.chirko@gmail.com";
+$to = "info@yin-young-you.com";
 
 $mailSent = mail($to, "Umfrage: Neue Nachricht", $user_message);
 

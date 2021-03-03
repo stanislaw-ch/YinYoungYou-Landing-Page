@@ -13,7 +13,7 @@
     &__item {
       display: flex;
       justify-content: center;
-      width: 120px;
+      width: 160px;
 
       & svg {
         height: 27px;
@@ -45,7 +45,7 @@
 @media (min-width: 1920px) {
   .social {
     &__item {
-      width: 185px;
+      width: 215px;
 
       & svg {
         height: 65px;

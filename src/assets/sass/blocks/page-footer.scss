@@ -27,7 +27,7 @@
     }
 
     & a {
-      font-family: "Info", "Arial", sans-serif;
+      font-family: "Roboto", "Arial", sans-serif;
       font-weight: 400;
       font-size: 18px;
       text-transform: uppercase;
@@ -61,7 +61,7 @@
     }
 
     &__info-item {
-      width: 132px;
+      width: 160px;
       text-align: center;
 
       &:nth-child(n + 2) {
@@ -160,7 +160,7 @@
     }
 
     &__info-item {
-      width: 185px;
+      width: 215px;
 
       & a {
         font-size: 22px;

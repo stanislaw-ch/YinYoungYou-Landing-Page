@@ -1,13 +1,13 @@
 <?php
-$list_id = '3cffd71e2e';
-$authToken = '218afc79e4ee36dc063bd3b2e753bc90-us1';
+$list_id = 'd3eb4aada4';
+$authToken = '-us7';
 
 $postData = array(
   "email_address" => $_POST["email"],
-  "status" => "subscribed"
+  "status" => "pending"
 );
 
-$ch = curl_init('https://us1.api.mailchimp.com/3.0/lists/'.$list_id.'/members/');
+$ch = curl_init('https://us7.api.mailchimp.com/3.0/lists/'.$list_id.'/members/');
 
 curl_setopt_array($ch, array(
   CURLOPT_POST => TRUE,
