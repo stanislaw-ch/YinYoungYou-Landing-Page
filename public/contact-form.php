@@ -18,5 +18,9 @@ $message = trim($message);
 // $to = "info@yin-young-you.com";
 $to = "post.chirko@gmail.com";
 
-if (mail($to, "Kontakt: Neue Nachricht", "Name: ".$user_name."\r\nE-mail Adresse: ".$email."\r\nNachricht: \r\n".$message))
+$mailSent = mail($to, "Kontakt: Neue Nachricht", "Name: ".$user_name."\r\nE-mail Adresse: ".$email."\r\nNachricht: \r\n".$message);
+
+if ($mailSent) {
+  echo "200";
+};
 ?>

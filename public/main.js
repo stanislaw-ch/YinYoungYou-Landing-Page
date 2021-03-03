@@ -76,11 +76,8 @@ if (surveyForm) {
       method: method,
       body: form
     }).then(function (response) {
-      console.log(response);
       return response.json();
     }).then(function (data) {
-      console.log(data);
-
       if (data === StatusCode.OK) {
         successMassage.classList.remove("survey__form-success--hidden");
       } else {
@@ -427,7 +424,7 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
     if(true) {
-      // 1614785389063
+      // 1614786764660
       var cssReload = __webpack_require__(/*! ../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"publicPath":"../","locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -584,7 +581,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("1d6c0100867e05bce82b")
+/******/ 		__webpack_require__.h = () => ("d26f07de02bdaffaa1e7")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

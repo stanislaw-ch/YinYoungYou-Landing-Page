@@ -1,5 +1,5 @@
 <?php
-echo $user_message = "Allgemeine Prävention für das psychische Wohlbefinden: ".$_POST['option_1']
+$user_message = "Allgemeine Prävention für das psychische Wohlbefinden: ".$_POST['option_1']
                   ."\r\nPsychisch belastete Eltern: ".$_POST['option_2']
                   ."\r\nMobbing in der Schule: ".$_POST['option_3']
                   ."\r\nEigene Sexualität: ".$_POST['option_4']
@@ -10,5 +10,9 @@ echo $user_message = "Allgemeine Prävention für das psychische Wohlbefinden: "
 // $to = "info@yin-young-you.com";
 $to = "post.chirko@gmail.com";
 
-mail($to, "Umfrage: Neue Nachricht", $user_message)
+$mailSent = mail($to, "Umfrage: Neue Nachricht", $user_message);
+
+if ($mailSent) {
+    echo "200";
+  };
 ?>
