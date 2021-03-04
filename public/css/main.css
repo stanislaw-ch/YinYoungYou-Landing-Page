@@ -2200,10 +2200,10 @@ input[type="radio"].visually-hidden {
   .app__title-wrapper {
     padding: 36px 0;
     background-color: #f7f7f7; }
-    .app__title-wrapper h4 {
+    .app__title-wrapper h3 {
       margin: 0;
       text-align: center; }
-      .app__title-wrapper h4 span {
+      .app__title-wrapper h3 span {
         text-transform: none; }
   .app__content h4 {
     margin: 105px 0 0; }

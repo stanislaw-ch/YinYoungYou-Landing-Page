@@ -11,6 +11,7 @@
   <link rel="preload" href="fonts/roboto-lite-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-bold-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon.jpg">
 </head>
 <body>
   <header class="page-header">
@@ -58,13 +59,13 @@
               <p>Trage hier deine E-Mail-Adresse ein - wir informieren dich gerne, sobald wir starten können:</p>
               <form action="subscribe.php" method="POST" class="form">
                 <div class="subscribe__fields-wrapper">
-                  <span class="visually-hidden">E-mail</span>
+                  <label class="visually-hidden" for="email">E-mail</label>
                   <input
                       class="subscribe__input form__input"
                       type="email"
                       enctype="multipart/form-data"
                       name="email"
-                      id="email"
+                      id="email-1"
                       required
                   />
                   <span class="form__input-message"></span>
@@ -171,7 +172,7 @@
         <h2 class="visually-hidden">Yin Young and You App</h2>
         <div class="app__title-wrapper">
           <div class="container">
-            <h4>Die YIN YOUNG & YOU App. <br> <span>Eine helfende Hand, jederzeit und überall.</span></h4>
+            <h3>Die YIN YOUNG & YOU App. <br> <span>Eine helfende Hand, jederzeit und überall.</span></h3>
           </div>
         </div>
         <div class="container">
@@ -387,13 +388,13 @@
                 <p>Trage hier deine E-Mail-Adresse ein - wir informieren dich gerne, sobald wir starten können:</p>
                 <form action="subscribe.php" method="POST" class="form">
                   <div class="subscribe__fields-wrapper">
-                    <span class="visually-hidden">E-mail</span>
+                    <label class="visually-hidden" for="email">E-mail</label>
                     <input
                         class="subscribe__input form__input"
                         type="email"
                         enctype="multipart/form-data"
                         name="email"
-                        id="email"
+                        id="email-2"
                         required
                     />
                     <span class="form__input-message"></span>
@@ -420,7 +421,7 @@
           <source type="image/webp" srcset="img/logo-main@1x.webp 1x, img/logo-main@2x.webp 2x">
           <!-- 1х: 945px; 2x: 1890px -->
           <img src="img/logo-main@1x.png" srcset="img/logo-main@1x.png 1x, img/logo-main@2x.png 2x" width="54" height="57" alt="Logo von YIN YOUNG YOU">
-        </picture>
+          </picture>
         </a>
         <ul class="page-footer__info-list">
           <li class="page-footer__info-item">
@@ -435,7 +436,7 @@
         </ul>
         <ul class="page-footer__social social">
           <li class="social__item">
-            <a href="https://www.facebook.com/Yin-Young-You-110442964063523" target="_blank">
+            <a href="https://www.facebook.com/Yin-Young-You-110442964063523" target="_blank" rel="noopener">
               <span class="visually-hidden">facebook</span>
               <svg width="50" height="50">
                 <use xlink:href="img/sprite/sprite.svg#sprite-icon-facebook"></use>
@@ -443,7 +444,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a href="https://www.linkedin.com/company/yin-young-you" target="_blank">
+            <a href="https://www.linkedin.com/company/yin-young-you" target="_blank" rel="noopener">
               <span class="visually-hidden">linkedin</span>
               <svg width="50" height="50">
                 <use xlink:href="img/sprite/sprite.svg#sprite-icon-linkedin"></use>
@@ -451,7 +452,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a href="https://www.instagram.com/yin_young_you/?hl=en" target="_blank">
+            <a href="https://www.instagram.com/yin_young_you/?hl=en" target="_blank" rel="noopener">
               <span class="visually-hidden">instagram</span>
               <svg width="50" height="50">
                 <use xlink:href="img/sprite/sprite.svg#sprite-icon-instagram"></use>
