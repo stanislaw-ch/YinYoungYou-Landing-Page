@@ -1,7 +1,2 @@
-@import "mixins";
-
-// Base DroidSans:
 @include font-face("Roboto", "../fonts/roboto-lite-latin", 300);
 @include font-face("Roboto", "../fonts/roboto-bold-latin", 700);
-@include font-face("Info", "../fonts/info-normal", 400);
-@include font-face("Info", "../fonts/info-bold", 700);

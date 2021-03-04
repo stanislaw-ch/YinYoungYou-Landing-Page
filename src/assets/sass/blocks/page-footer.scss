@@ -27,7 +27,7 @@
     }
 
     & a {
-      font-family: "Roboto", "Arial", sans-serif;
+      font-family: $mainFont;
       font-weight: 400;
       font-size: 18px;
       text-transform: uppercase;
@@ -101,12 +101,6 @@
 
     &__info-list {
       margin: 32px 0 0;
-    }
-
-    &__info-item {
-      & a {
-        // font-size: 11px;
-      }
     }
 
     &__social {

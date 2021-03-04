@@ -38,7 +38,6 @@
 
     &:hover {
       background-color: #42c022;
-      // background-color: #20ca25;
       transition: all 400ms ease;
     }
 
@@ -142,7 +141,6 @@
     }
 
     & form {
-      // position: relative;
       margin-top: 39px;
     }
 
@@ -232,11 +230,7 @@
     }
 
     &__form-input-wrapper {
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: space-between;
       height: 120px;
-      // width: 49%;
 
       & label {
         padding: 0 0 30px 0;

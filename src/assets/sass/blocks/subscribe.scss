@@ -9,7 +9,6 @@
     justify-content: space-between;
     height: 48px;
     padding-bottom: 5px;
-    // padding-top: 30px;
 
 
     &::after {
@@ -82,19 +81,6 @@
   // }
 }
 
-@media (min-width: 450px) {
-  .subscribe {
-    &__message {
-      // width: 354px;
-      // margin-top: 20px;
-    }
-
-    &__fields-wrapper {
-      // padding-top: 20px;
-    }
-  }
-}
-
 @media (min-width: 768px) {
   .subscribe {
     & button {
@@ -106,33 +92,20 @@
 
 @media (min-width: 1024px) {
   .subscribe {
-    // &__message {
-    //   width: 354px;
-    //   margin-top: 20px;
-    // }
-
     &__fields-wrapper {
       height: 38px;
-      // padding-top: 16px;
     }
 
     & button {
       min-width: 184px;
-      // font-size: 14px;
     }
   }
 }
 
 @media (min-width: 1280px) {
   .subscribe {
-    // &__message {
-    //   width: 354px;
-    //   margin-top: 20px;
-    // }
-
     &__fields-wrapper {
       height: 48px;
-      // padding-top: 16px;
 
       & button {
         min-width: 230px;
@@ -147,14 +120,8 @@
 
 @media (min-width: 1920px) {
   .subscribe {
-    // &__message {
-    //   width: 354px;
-    //   margin-top: 20px;
-    // }
-
     &__fields-wrapper {
       height: 57px;
-      // padding-top: 16px;
 
       &::after {
         top: calc(50% - 19px);

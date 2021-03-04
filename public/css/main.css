@@ -1,61 +1,3 @@
-/* Vars:
-  ========================================================================== */
-/*
-  All colors taken from:
-  https://github.com/vedees/uimini
-*/
-/* Mixins:
-  ========================================================================== */
-/* Fonts Helpers:
-   Read more: https://github.com/vedees/webpack-template/blob/master/README.md#add-fonts
-   ========================================================================== */
-/*
-  By default template support only modern format fonts
-  Without svg. Only: .woff, .woffs
-  if ypu need svg comments lines bellow and uncomments "Fonts helper all format fonts"
-
-  Usage:
-    1. Put your font to `src/assets/fonts/FOLDERNAME/FONTNAME`
-      FOLLOW: Files Required
-      Example: .woff, .woffs formats
-    2. Go to fonts.scss
-    3. Use mixon
-      Example: @include font-face("OpenSans", "../fonts/OpenSans/opensans");
-
-    Required parameters: @family, @family
-    Minor parameters: @weight, @style, @pipeline
-
-    Example Base:
-      @include font-face("OpenSans", "../fonts/OpenSans/opensans");
-    Example Situation:
-      @include font-face("OpenSans", "../fonts/OpenSans/opensansItalic", 400, italic);
-*/
-/* Mixins:
-  ========================================================================== */
-/* Fonts Helpers:
-   Read more: https://github.com/vedees/webpack-template/blob/master/README.md#add-fonts
-   ========================================================================== */
-/*
-  By default template support only modern format fonts
-  Without svg. Only: .woff, .woffs
-  if ypu need svg comments lines bellow and uncomments "Fonts helper all format fonts"
-
-  Usage:
-    1. Put your font to `src/assets/fonts/FOLDERNAME/FONTNAME`
-      FOLLOW: Files Required
-      Example: .woff, .woffs formats
-    2. Go to fonts.scss
-    3. Use mixon
-      Example: @include font-face("OpenSans", "../fonts/OpenSans/opensans");
-
-    Required parameters: @family, @family
-    Minor parameters: @weight, @style, @pipeline
-
-    Example Base:
-      @include font-face("OpenSans", "../fonts/OpenSans/opensans");
-    Example Situation:
-      @include font-face("OpenSans", "../fonts/OpenSans/opensansItalic", 400, italic);
-*/
 @font-face {
   font-family: "Roboto";
   font-weight: 300;
@@ -67,18 +9,6 @@
   font-weight: 700;
   font-style: normal;
   src: url(../fonts/roboto-bold-latin.woff) format("woff"), url(../fonts/roboto-bold-latin.woff2) format("woff2"); }
-
-@font-face {
-  font-family: "Info";
-  font-weight: 400;
-  font-style: normal;
-  src: url(../fonts/info-normal.woff) format("woff"), url(../fonts/info-normal.woff2) format("woff2"); }
-
-@font-face {
-  font-family: "Info";
-  font-weight: 700;
-  font-style: normal;
-  src: url(../fonts/info-bold.woff) format("woff"), url(../fonts/info-bold.woff2) format("woff2"); }
 
 body {
   min-width: 320px;
@@ -418,13 +348,11 @@ input[type="radio"].visually-hidden {
   overflow: hidden; }
 
 .section h3 {
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   text-transform: uppercase; }
 
 .section h4 {
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
   text-transform: uppercase; }
 
@@ -434,12 +362,10 @@ input[type="radio"].visually-hidden {
     content: "";
     display: block; }
   .section p span {
-    font-family: "Roboto", "Arial", sans-serif;
     font-weight: 700; }
 
 .section b {
   margin: 0;
-  font-family: "Info", "Arial", sans-serif;
   font-weight: 400; }
 
 .section ul {
@@ -517,8 +443,6 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1920px) {
   .concept__content-wrapper {
     margin-top: 300px; }
-  .concept__content {
-    width: auto; }
   .concept__content p {
     margin: 43px 0 0;
     font-size: 20px; } }
@@ -842,7 +766,7 @@ input[type="radio"].visually-hidden {
   .offer__subscribe form {
     margin-top: 26px; }
 
-@media (min-width: 414px) and (min-height: 730px) and (max-height: 900px) and (orientation: portrait) {
+@media (min-width: 414px) and (min-height: 780px) and (max-height: 900px) and (orientation: portrait) {
   .offer {
     position: relative;
     overflow: hidden; }
@@ -1323,7 +1247,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
   list-style-type: none; }
   .site-list__item a {
-    font-family: "Info", "Arial", sans-serif;
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
@@ -1750,21 +1673,16 @@ input[type="radio"].visually-hidden {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 14px; }
+    margin-bottom: 25px; }
     .contact__form-item label {
-      font-family: "Info", "Arial", sans-serif;
       font-weight: 700; }
-    .contact__form-item:last-of-type {
-      padding-top: 5px; }
     .contact__form-item .form__input-message {
-      top: 9px;
-      right: 0;
-      left: auto; }
+      top: 19px; }
   .contact__form-input {
     box-sizing: border-box;
     height: 41px;
     padding-left: 10px;
-    margin-top: 8px;
+    margin-top: 15px;
     font-size: 12px;
     background-color: #f9f9f9;
     border: 1px solid #7070703e;
@@ -1780,7 +1698,6 @@ input[type="radio"].visually-hidden {
   .contact__form-button {
     width: 100%;
     height: 48px;
-    font-family: "Roboto", "Arial", sans-serif;
     font-weight: 700;
     color: #ffffff;
     background-color: #ff5f0e;
@@ -1834,15 +1751,11 @@ input[type="radio"].visually-hidden {
     margin-bottom: 18px; }
     .contact__form-item:last-of-type {
       padding-top: 0; }
-    .contact__form-item .form__input-message {
-      top: 15px;
-      right: auto;
-      left: 0; }
   .contact__form-input {
     width: 100%;
     font-size: 14px; } }
 
-@media (min-width: 890px) {
+@media (min-width: 980px) {
   .contact__form-item-wrapper {
     display: flex;
     justify-content: space-between; }
@@ -1866,7 +1779,7 @@ input[type="radio"].visually-hidden {
   .contact__form-wrapper {
     padding: 40px 0 41px; }
   .contact__form-content-wrapper {
-    padding: 37px 40px 47px;
+    padding: 37px 30px 47px;
     margin: 0 22px; }
   .contact__picture {
     padding-right: 78px; }
@@ -1991,7 +1904,6 @@ input[type="radio"].visually-hidden {
   padding: 50px 0; }
   .aup h3 {
     margin: 0 0 20px;
-    font-family: "Info", "Arial", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 35px;
@@ -2002,7 +1914,6 @@ input[type="radio"].visually-hidden {
     .aup__content-wrapper p a {
       color: #000000; }
   .aup__content-wrapper b {
-    font-family: "Info", "Arial", sans-serif;
     font-weight: 500; }
     .aup__content-wrapper b + p a {
       margin-bottom: 0; }
@@ -2012,7 +1923,6 @@ input[type="radio"].visually-hidden {
     font-size: 14px; }
   .aup__title {
     margin: 0;
-    font-family: "Info", "Arial", sans-serif;
     font-weight: 700; }
   .aup__sub-title {
     margin: 0; }
@@ -2028,11 +1938,9 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   width: 100%;
   margin-top: 5px;
-  font-family: "Info", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #ffffff;
-  line-height: 18px; }
+  color: #ffffff; }
   .form__message--error {
     color: #e31919; }
   .form__message--success {
@@ -2040,14 +1948,14 @@ input[type="radio"].visually-hidden {
   .form__message--hidden {
     display: none; }
   .form__message p {
-    margin: 0; }
+    margin: 0;
+    line-height: 18px; }
 
 .form__input-message {
   position: absolute;
-  top: -17px;
+  top: -19px;
   left: 0;
   display: block;
-  font-family: "info", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -2325,11 +2233,17 @@ input[type="radio"].visually-hidden {
   .app__visualization-list {
     margin: 0; }
   .app__hover-above {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 292px;
     margin: 0; }
   .app__hover-below {
     display: none;
-    width: 150px;
-    margin: -30px auto 0;
+    align-items: center;
+    height: 292px;
+    width: 185px;
+    margin: 0 auto;
     line-height: 36px; }
   .app__visualization-item {
     position: relative;
@@ -2338,27 +2252,24 @@ input[type="radio"].visually-hidden {
     .app__visualization-item:last-child {
       margin-top: 60px; }
       .app__visualization-item:last-child .app__visualization-text {
-        top: 78px;
-        left: calc(50% - 112px);
-        width: 225px; }
-    .app__visualization-item:hover .app__hover-above {
+        left: calc(50% - 150px);
+        width: 300px; }
+    .app__visualization-item .app__visualization-text:hover .app__hover-above {
       display: none; }
-    .app__visualization-item:hover .app__hover-below {
-      display: block; }
+    .app__visualization-item .app__visualization-text:hover .app__hover-below {
+      display: flex; }
   .app__visualization-text {
     position: absolute;
-    top: 106px;
-    left: calc(50% - 130px);
-    width: 260px;
-    font-family: "Info", "Arial", sans-serif;
-    font-size: 18px;
+    top: 0;
+    left: calc(50% - 140px);
+    width: 280px;
+    font-size: 16px;
     text-align: center; }
     .app__visualization-text p {
       font-weight: 400; }
       .app__visualization-text p br {
         margin-top: 5px; }
       .app__visualization-text p span {
-        font-family: "Info", "Arial", sans-serif;
         font-weight: 700; }
 
 @media (min-width: 500px) {
@@ -2382,7 +2293,7 @@ input[type="radio"].visually-hidden {
       flex-direction: column;
       justify-content: space-between;
       height: 205px;
-      padding: 0 60px; }
+      padding: 0 55px; }
       .app__item-element:last-child {
         margin: 0; }
     .app__picture {
@@ -2395,21 +2306,32 @@ input[type="radio"].visually-hidden {
       margin-top: auto; }
     .app__visualization-list {
       display: flex; }
-    .app__hover-below {
+    .app__hover-above {
       width: 180px;
+      height: 235px;
+      margin: 0 auto; }
+    .app__hover-below {
+      width: 150px;
+      height: 235px;
       margin: 0 auto; }
     .app__visualization-item {
       width: 100%; }
       .app__visualization-item:last-child {
         margin-top: 0; }
         .app__visualization-item:last-child .app__visualization-text {
-          top: 47px; }
-        .app__visualization-item:last-child:hover .app__hover-below {
-          margin-top: 15px; }
+          left: calc(50% - 115px);
+          width: 230px; }
       .app__visualization-item img {
         width: 245px; }
     .app__visualization-text {
-      top: 75px; } }
+      left: calc(50% - 115px);
+      width: 230px; }
+      .app__visualization-text p {
+        line-height: 20px; }
+        .app__visualization-text p span {
+          line-height: 24px; }
+          .app__visualization-text p span br {
+            display: none; } }
 
 @media (min-width: 1024px) {
   .app {
@@ -2435,24 +2357,26 @@ input[type="radio"].visually-hidden {
       margin-top: 10px; }
     .app__visualization-wrapper {
       margin-top: 60px; }
+    .app__hover-above {
+      height: 300px;
+      width: 221px; }
     .app__hover-below {
-      margin: -38px auto 0; }
+      height: 300px;
+      width: 184px;
+      margin: 0 auto; }
     .app__visualization-item:last-child .app__visualization-text {
-      top: 88px;
-      left: calc(50% - 112px);
-      width: 225px; }
-    .app__visualization-item:last-child:hover .app__hover-below {
-      margin-top: -30px; }
+      left: calc(50% - 145px);
+      width: 290px; }
     .app__visualization-item img {
       width: 316px; }
     .app__visualization-text {
-      top: 116px;
-      left: calc(50% - 115px);
-      width: 230px; }
+      left: calc(50% - 145px);
+      width: 290px; }
       .app__visualization-text p {
-        font-size: 20px; }
-        .app__visualization-text p span br {
-          display: none; } }
+        font-size: 18px;
+        line-height: 30px; }
+        .app__visualization-text p span {
+          line-height: 34px; } }
 
 @media (min-width: 1280px) {
   .app {
@@ -2470,7 +2394,7 @@ input[type="radio"].visually-hidden {
       margin: 60px 0 0; }
     .app__item-element {
       height: 306px;
-      padding: 0 155px 0 163px; }
+      padding: 0 155px 0 140px; }
     .app__picture {
       padding: 0; }
       .app__picture img {
@@ -2483,17 +2407,20 @@ input[type="radio"].visually-hidden {
         margin-top: 16px; }
     .app__visualization-wrapper {
       margin-top: 75px; }
+    .app__hover-above {
+      width: 260px;
+      height: 380px; }
     .app__hover-below {
-      margin: -38px auto 0;
-      width: 200px; }
+      height: 380px;
+      width: 260px; }
     .app__visualization-item:last-child .app__visualization-text {
-      top: 110px; }
-    .app__visualization-item:last-child:hover .app__hover-below {
-      margin-top: -35px; }
+      left: calc(50% - 176px);
+      width: 350px; }
     .app__visualization-item img {
       width: 395px; }
     .app__visualization-text {
-      top: 138px; }
+      left: calc(50% - 176px);
+      width: 350px; }
       .app__visualization-text p {
         font-size: 24px; } }
 
@@ -2513,7 +2440,7 @@ input[type="radio"].visually-hidden {
       margin: 111px 0 0; }
     .app__item-element {
       height: 428px;
-      padding: 0 205px 0 229px; }
+      padding: 0 205px 0 210px; }
     .app__picture {
       padding: 0; }
       .app__picture img {
@@ -2524,24 +2451,29 @@ input[type="radio"].visually-hidden {
       margin-top: 33px; }
     .app__visualization-wrapper {
       margin-top: 98px; }
+    .app__hover-above {
+      width: 420px;
+      height: 565px; }
     .app__hover-below {
-      margin: -78px auto 0;
-      width: 300px; }
+      width: 320px;
+      height: 565px; }
     .app__visualization-item:last-child .app__visualization-text {
-      top: 153px;
-      left: calc(50% - 162px);
-      width: 325px; }
-    .app__visualization-item:last-child:hover .app__hover-below {
-      margin-top: -65px; }
+      left: calc(50% - 275px);
+      width: 540px; }
     .app__visualization-item img {
       width: 593px; }
+    .app__visualization-item .app__visualization-text:hover p {
+      font-size: 30px;
+      line-height: 40px;
+      width: 390px; }
     .app__visualization-text {
-      top: 207px;
-      left: calc(50% - 162px);
-      width: 325px; }
+      left: calc(50% - 275px);
+      width: 540px; }
       .app__visualization-text p {
         font-size: 36px;
-        line-height: 52px; } }
+        line-height: 52px; }
+        .app__visualization-text p span {
+          line-height: 56px; } }
 
 .survey__content {
   margin-top: 89px; }

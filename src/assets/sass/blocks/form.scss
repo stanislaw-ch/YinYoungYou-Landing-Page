@@ -14,15 +14,12 @@
     align-items: center;
     box-sizing: border-box;
     width: 100%;
-    // height: 50px;
     margin-top: 5px;
-    // padding: 0 10px;
 
-    font-family: "Info", "Arial", sans-serif;
+    // font-family: "Info", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: #ffffff;
-    line-height: 18px;
 
     &--error {
       color: #e31919;
@@ -38,17 +35,17 @@
 
     & p {
       margin: 0;
+      line-height: 18px;
     }
   }
 
   &__input-message {
     position: absolute;
-    top: -17px;
-    // bottom: -15px;
+    top: -19px;
     left: 0;
     display: block;
 
-    font-family: "info", "Arial", sans-serif;
+    // font-family: "info", "Arial", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -105,21 +102,10 @@
       padding: 15px 0;
       font-family: "Roboto", "Arial", sans-serif;
       font-size: 14px;
-      // line-height: 17px;
 
       cursor: pointer;
       user-select: none;
     }
-
-    // &:last-of-type {
-    //   padding: 15px 10px 10px;
-    // }
-
-    // &:last-of-type label {
-    //   margin-bottom: 10px;
-    //   padding: 0;
-    //   cursor: auto;
-    // }
   }
 
   &__option-self {
@@ -211,31 +197,8 @@
     &__option-self {
       & label {
         font-size: 16px;
-        // line-height: 17px;
       }
     }
-
-    // &__option-input {
-    //   & + label::before {
-    //     content: "";
-
-    //     left: -31px;
-    //     top: calc(50% - 8px);
-
-    //     width: 19px;
-    //     height: 19px;
-    //   }
-
-    //   &:checked + label::after {
-    //     content: "";
-
-    //     top: calc(50% - 5px);
-    //     left: -28px;
-
-    //     width: 13px;
-    //     height: 13px;
-    //   }
-    // }
   }
 }
 
@@ -279,23 +242,11 @@
 
     &__option-input {
       & + label::before {
-        // content: "";
-
         left: -31px;
-        // top: calc(50% - 15px);
-
-        // width: 31px;
-        // height: 31px;
       }
 
       &:checked + label::after {
-        // content: "";
-
-        // top: calc(50% - 11px);
         left: -27px;
-
-        // width: 23px;
-        // height: 23px;
       }
     }
 
@@ -319,7 +270,6 @@
   .form {
     &__option-item {
       padding-left: 65px;
-      // width: 49%;
 
       &:not(:first-child) {
         margin-top: 20px;
@@ -340,7 +290,6 @@
 
       & label {
         font-size: 18px;
-        // line-height: 17px;
       }
     }
 
@@ -380,7 +329,6 @@
       &:not(:first-child) {
         margin-top: 28px;
       }
-      // width: 49%;
 
       & label {
         padding: 30px 0;
@@ -395,7 +343,6 @@
 
       & label {
         font-size: 28px;
-        // line-height: 17px;
       }
     }
 

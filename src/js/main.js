@@ -6,6 +6,8 @@ const subscribeFields = [`email`];
 const contactForm = document.querySelector(`.contact__form form`);
 const contactFields = [`email`, `message`];
 
+const surveyForm = document.querySelector(`.survey form`);
+
 if (subscribeForm) {
   subscribeForm.forEach((item) => new Validator(item, subscribeFields, `subscribe`).init());
 }
@@ -13,8 +15,6 @@ if (subscribeForm) {
 if (contactForm) {
   new Validator(contactForm, contactFields, `contact`).init();
 }
-
-const surveyForm = document.querySelector(`.survey form`);
 
 if (surveyForm) {
   const allCheckboxes = surveyForm.querySelectorAll(`input[type=checkbox]`);
@@ -48,28 +48,6 @@ if (surveyForm) {
       }
     });
   };
-
-  // const send = (data) => {
-  //   const formEntries = new FormData(data).entries();
-  //   const json = Object.assign(...Array.from(formEntries, ([x, y]) => ({[x]: y})));
-
-  //   let fetchData = {
-  //     method: `POST`,
-  //     body: JSON.stringify(json),
-  //     headers: {"Content-Type": `application/json`}
-  //   };
-
-  //   fetch(`/send-survey`, fetchData)
-  //       .then((res) => {
-  //         console.log(res);
-  //         if (res.ok) {
-  //           successMassage.classList.remove(`survey__form-success--hidden`);
-  //         } else {
-  //           const errorMessage = data.querySelector(`.form__message--error`);
-  //           errorMessage.classList.remove(`form__message--hidden`);
-  //         }
-  //       });
-  // };
 
   allCheckboxes.forEach((element) => element.addEventListener(`click`, function (evt) {
     if (evt.target.id === `option-7`) {

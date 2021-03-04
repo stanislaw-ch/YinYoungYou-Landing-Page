@@ -54,10 +54,6 @@
     &__content {
       width: 100%;
 
-      & h3 {
-        // font-size: 16px;
-      }
-
       & p {
         margin: 13px 0 0;
 
@@ -87,16 +83,8 @@
     }
 
     &__content {
-      // width: 855px;
-
-      & h3 {
-        // font-size: 20px;
-      }
-
       & p {
         margin: 23px 0 0;
-
-        // font-size: 16px;
       }
     }
 
@@ -120,16 +108,9 @@
     }
 
     &__content {
-      // width: 970px;
-
-      & h3 {
-        // font-size: 25px;
-      }
-
       & p {
         margin: 33px 0 0;
 
-        // font-size: 16px;
         line-height: 21px;
       }
     }
@@ -154,12 +135,6 @@
     }
 
     &__content {
-      // width: 1400px;
-
-      & h3 {
-        // font-size: 36px;
-      }
-
       & p {
         margin: 48px 0 0;
 
@@ -174,7 +149,6 @@
 
     &__visualization-item {
       & img {
-        // width: auto;
         height: 198px;
       }
     }

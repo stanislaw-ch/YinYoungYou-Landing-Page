@@ -44,23 +44,8 @@
 
 @media (min-width: 500px) {
   .newsletter {
-    // &__content {
-    //   padding: 32px 0 30px;
-
-    //   & h3 {
-    //     font-size: 16px;
-    //   }
-    // }
-
     &__subscribe {
       width: 440px;
-      // padding-top: 12px;
-
-      // & p {
-      //   width: 330px;
-      //   font-size: 14px;
-      //   line-height: 19px;
-      // }
     }
   }
 }
@@ -75,10 +60,6 @@
       background-position: 60px 0;
       background-size: 550px auto;
     }
-
-    // &__subscribe {
-    //   width: 440px;
-    // }
   }
 }
 
@@ -108,11 +89,6 @@
       & form {
         margin-top: 34px;
         width: 100%;
-        // width: 424px;
-
-        // & button {
-        //   min-width: 150px;
-        // }
       }
     }
   }
@@ -146,7 +122,6 @@
       & > p {
         margin: 0;
         font-size: 16px;
-        // padding-bottom: 33px;
         width: 455px;
       }
     }
@@ -185,12 +160,10 @@
       & > p {
         font-size: 16px;
         line-height: 24px;
-        // padding-bottom: 18px;
         width: auto;
       }
 
       & form {
-        // width: 100%;
         width: 569px;
         margin-top: 31px;
       }
@@ -225,7 +198,6 @@
       margin-top: 34px;
 
       & > p {
-        // font-size: 20px;
         line-height: 32px;
         font-size: 24px;
         padding-bottom: 56px;
@@ -233,7 +205,6 @@
       }
 
       & form {
-        // width: 100%;
         width: 730px;
         margin-top: 29px;
       }

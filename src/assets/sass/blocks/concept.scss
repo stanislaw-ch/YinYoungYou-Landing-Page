@@ -20,17 +20,10 @@
       margin-top: 70px;
     }
 
-    &__content {
-      & h3 {
-        // font-size: 16px;
-      }
-    }
-
     &__content p {
       margin: 14px 0 0;
 
       font-size: 14px;
-      // line-height: 26px;
     }
   }
 }
@@ -39,14 +32,6 @@
   .concept {
     &__content-wrapper {
       margin-top: 122px;
-    }
-
-    &__content {
-      // width: 855px;
-
-      & h3 {
-        // font-size: 20px;
-      }
     }
 
     &__content p {
@@ -63,18 +48,8 @@
       margin-top: 152px;
     }
 
-    &__content {
-      // width: 970px;
-
-      & h3 {
-        // font-size: 25px;
-      }
-    }
-
     &__content p {
       margin: 33px 0 0;
-
-      // line-height: 21px;
     }
   }
 }
@@ -85,19 +60,10 @@
       margin-top: 300px;
     }
 
-    &__content {
-      width: auto;
-
-      & h3 {
-        // font-size: 36px;
-      }
-    }
-
     &__content p {
       margin: 43px 0 0;
 
       font-size: 20px;
-      // line-height: 26px;
     }
   }
 }
