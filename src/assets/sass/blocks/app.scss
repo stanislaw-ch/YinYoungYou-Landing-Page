@@ -94,6 +94,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+    min-height: 308px;
 
     &:last-child {
       margin-top: 60px;
@@ -218,6 +219,7 @@
 
     &__visualization-item {
       width: 100%;
+      min-height: 234px;
 
       &:last-child {
         margin-top: 0;
@@ -313,6 +315,8 @@
     }
 
     &__visualization-item {
+      min-height: 324px;
+
       &:last-child {
         & .app__visualization-text {
           // top: 88px;
@@ -413,6 +417,8 @@
     }
 
     &__visualization-item {
+      min-height: 404px;
+
       &:last-child {
         & .app__visualization-text {
           // top: 110px;
@@ -506,6 +512,8 @@
     }
 
     &__visualization-item {
+      min-height: 603px;
+
       &:last-child {
         & .app__visualization-text {
           // top: 153px;

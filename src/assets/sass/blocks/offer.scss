@@ -15,11 +15,14 @@
   }
 
   &__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 20px 0 0;
   }
 
   &__logo {
-    margin: 0 auto;
+    // margin: 0 auto;
     height: 179px;
     width: 179px;
 
@@ -74,20 +77,20 @@
     }
 
     &__content-wrapper {
-      display: flex;
-      flex-direction: column;
       height: 70%;
     }
 
     &__logo {
-      margin: 0 auto;
       height: 40%;
       width: 48%;
 
       & img {
         margin: 0 auto;
-        height: 100%;
-        width: auto;
+        height: auto;
+        width: 100%;
+        max-width: 275px;
+        // height: 100%;
+        // width: auto;
       }
     }
 
@@ -238,6 +241,7 @@
       justify-content: flex-end;
       order: 2;
       height: auto;
+      min-height: 199px;
       width: 32%;
       margin-left: auto;
       margin-right: -5px;
@@ -331,6 +335,7 @@
       margin-left: auto;
       margin-right: -5px;
       width: 32%;
+      min-height: 199px;
 
       & img {
         width: auto;
@@ -393,6 +398,7 @@
     }
 
     &__content-wrapper {
+      align-items: flex-start;
       margin: 59px 0 0;
     }
 
@@ -450,6 +456,7 @@
     }
 
     &__content-wrapper {
+      align-items: flex-start;
       margin: 59px 0 0;
     }
 
@@ -604,6 +611,10 @@
   .offer {
     &__content {
       padding-right: 380px;
+    }
+
+    &__logo {
+      min-height: 382px;
     }
 
     &__subscribe {

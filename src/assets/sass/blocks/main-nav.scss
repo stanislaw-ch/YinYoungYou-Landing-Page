@@ -17,19 +17,10 @@
     & img {
       width: auto;
       height: 100%;
+      min-height: 52px;
     }
   }
 }
-
-// @media (min-width: 768px) {
-//   .main-nav {
-//   }
-// }
-
-// @media (min-width: 900px) {
-//   .main-nav {
-//   }
-// }
 
 @media (min-width: 1280px) {
   .main-nav {
