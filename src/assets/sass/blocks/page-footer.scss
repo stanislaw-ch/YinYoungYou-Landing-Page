@@ -6,10 +6,9 @@
   }
 
   &__logo {
-    & img {
-      display: block;
-      margin: 0 auto;
-    }
+    display: block;
+    margin: 0 auto;
+    width: 54px;
   }
 
   &__info-list {
@@ -47,9 +46,7 @@
     }
 
     &__logo {
-      & img {
-        width: 48px;
-      }
+      width: 48px;
     }
 
     &__info-list {
@@ -94,9 +91,7 @@
     }
 
     &__logo {
-      & img {
-        width: 43px;
-      }
+      width: 43px;
     }
 
     &__info-list {
@@ -116,9 +111,7 @@
     }
 
     &__logo {
-      & img {
-        width: 55px;
-      }
+      width: 55px;
     }
 
     &__info-list {
@@ -144,6 +137,8 @@
     }
 
     &__logo {
+      width: 80px;
+
       & img {
         width: 80px;
       }

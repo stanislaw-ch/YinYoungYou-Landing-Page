@@ -30,7 +30,8 @@ export default class Validator {
   validateOnEntry() {
 
     this.fields.forEach((field) => {
-      const input = this.form.querySelector(`#${field}`);
+      const input = this.form.querySelector(`[data-type="${field}"]`);
+      // const input = this.form.querySelector(`#${field}`);
 
       input.addEventListener(`input`, () => {
         const successMessage = this.form.querySelector(`.form__message--error`);
@@ -138,46 +139,4 @@ export default class Validator {
       }
     });
   }
-
-  // send(formType) {
-  //   const successMessageOnButton = this.form.querySelector(`.form__button`);
-  //   const successMessage = this.form.querySelector(`.form__message--success`);
-  //   const errorMessage = this.form.querySelector(`.form__message--error`);
-
-  //   const formEntries = new FormData(this.form).entries();
-  //   const json = Object.assign(...Array.from(formEntries, ([x, y]) => ({[x]: y})));
-
-  //   let fetchData = {
-  //     method: `POST`,
-  //     body: JSON.stringify(json),
-  //     headers: {"Content-Type": `application/json`}
-  //   };
-
-  //   if (formType === `subscribe`) {
-  //     fetch(`/subscribe`, fetchData)
-  //       .then((res) => {
-  //         if (res.ok) {
-  //           successMessageOnButton.classList.add(`form__button--success`);
-  //           successMessageOnButton.innerText = `Vielen Dank!`;
-  //           successMessage.classList.remove(`form__message--hidden`);
-  //         } else {
-  //           errorMessage.classList.remove(`form__message--hidden`);
-  //         }
-  //       });
-  //   }
-
-  //   if (formType === `contact`) {
-  //     fetch(`/send-form`, fetchData)
-  //       .then((res) => {
-  //         if (res.ok) {
-  //           successMessageOnButton.classList.add(`form__button--success`);
-  //           successMessageOnButton.innerText = `Vielen Dank für deine Nachricht!`;
-
-  //           this.form.reset();
-  //         } else {
-  //           errorMessage.classList.remove(`form__message--hidden`);
-  //         }
-  //       });
-  //   }
-  // }
 }
