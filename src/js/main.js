@@ -8,6 +8,8 @@ const contactFields = [`email`, `message`];
 
 const surveyForm = document.querySelector(`.survey form`);
 
+const banner = document.querySelector(`.banner`);
+
 if (subscribeForm) {
   subscribeForm.forEach((item) => new Validator(item, subscribeFields, `subscribe`).init());
 }
@@ -97,5 +99,13 @@ if (surveyForm) {
     evt.preventDefault();
 
     send(new FormData(surveyForm), surveyForm.action, surveyForm.method);
+  });
+}
+
+if (banner) {
+  const closeButton = document.querySelector(`.banner__button`);
+
+  closeButton.addEventListener(`click`, function () {
+    banner.classList.add(`banner--hidden`);
   });
 }
