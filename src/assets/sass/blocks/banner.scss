@@ -111,7 +111,16 @@
     }
 
     &__button {
-      top: 20px;
+      top: 19px;
+      right: 30px;
+
+      &::before,
+      &::after {
+        top: 14px;
+        left: 4px;
+
+        width: 24px;
+      }
     }
   }
 }
