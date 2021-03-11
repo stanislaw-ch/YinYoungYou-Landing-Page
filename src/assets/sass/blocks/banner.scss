@@ -96,7 +96,7 @@
 
       & p {
         width: 320px;
-        // margin: 0 auto;
+        margin: 0 auto 0 calc(50% - 200px);
 
         // text-align: center;
         font-size: 16px;
@@ -107,7 +107,7 @@
     &__logo {
       // right: calc(50% - 38px);
       bottom: -5px;
-      right: calc(50% - 245px);
+      right: calc(50% - 200px);
     }
 
     &__button {
