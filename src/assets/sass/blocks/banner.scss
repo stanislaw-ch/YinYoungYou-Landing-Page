@@ -106,8 +106,13 @@
 
     &__logo {
       // right: calc(50% - 38px);
-      bottom: -5px;
-      right: calc(50% - 200px);
+      bottom: 2px;
+      right: calc(50% - 190px);
+
+      & img {
+        height: 62px;
+        width: auto;
+      }
     }
 
     &__button {
