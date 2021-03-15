@@ -23,9 +23,8 @@ if (isset($_POST)) {
   $result = curl_exec($ch);
   $info = curl_getinfo($ch);
 
-  $response = $info["http_code"];
-
-  echo $info["http_code"];
+  // echo $response = $info["http_code"];
+  echo $result;
 };
 ?>
 

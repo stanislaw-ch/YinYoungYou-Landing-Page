@@ -1,4 +1,6 @@
-export default class Validator {
+import {send} from "./form-send.js";
+
+export default class FormValidator {
   constructor(form, fields, formType) {
     this.form = form;
     this.fields = fields;
@@ -17,12 +19,12 @@ export default class Validator {
       e.preventDefault();
 
       this.fields.forEach((field) => {
-        const input = this.form.querySelector(`#${field}`);
+        const input = this.form.querySelector(`[data-type="${field}"]`);
         this.validateFields(input);
       });
 
       if (this.errors === 0) {
-        this.send(new FormData(this.form), this.form.action, this.form.method, this.formType);
+        send(this.form, this.formType);
       }
     });
   }
@@ -31,7 +33,6 @@ export default class Validator {
 
     this.fields.forEach((field) => {
       const input = this.form.querySelector(`[data-type="${field}"]`);
-      // const input = this.form.querySelector(`#${field}`);
 
       input.addEventListener(`input`, () => {
         const successMessage = this.form.querySelector(`.form__message--error`);
@@ -103,40 +104,5 @@ export default class Validator {
       field.parentElement.querySelector(`.form__input-message`).innerText = message;
       field.classList.add(`form__input--error`);
     }
-  }
-
-  send(form, action, method, formType) {
-    const successMessageOnButton = this.form.querySelector(`.form__button`);
-    const successMessage = this.form.querySelector(`.form__message--success`);
-    const errorMessage = this.form.querySelector(`.form__message--error`);
-
-    const StatusCode = {
-      OK: 200
-    };
-
-    fetch(action, {
-      method,
-      body: form,
-    }).then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      if (data === StatusCode.OK) {
-        successMessageOnButton.classList.add(`form__button--success`);
-
-        if (formType === `subscribe`) {
-          successMessageOnButton.innerText = `Vielen Dank!`;
-          successMessage.classList.remove(`form__message--hidden`);
-        }
-        if (formType === `contact`) {
-          successMessageOnButton.classList.add(`form__button--success`);
-          successMessageOnButton.innerText = `Vielen Dank für deine Nachricht!`;
-
-          this.form.reset();
-        }
-      } else {
-        errorMessage.classList.remove(`form__message--hidden`);
-      }
-    });
   }
 }

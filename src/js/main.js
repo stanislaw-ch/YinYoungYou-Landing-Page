@@ -1,4 +1,6 @@
-import Validator from './utils/validator.js';
+import FormValidator from './utils/form-validator.js';
+import {send} from "./utils/form-send.js";
+import {FormType} from "./const.js";
 
 const subscribeForm = document.querySelectorAll(`.subscribe form`);
 const subscribeFields = [`email`];
@@ -11,99 +13,80 @@ const surveyForm = document.querySelector(`.survey form`);
 const banner = document.querySelector(`.banner`);
 
 if (subscribeForm) {
-  subscribeForm.forEach((item) => new Validator(item, subscribeFields, `subscribe`).init());
+  subscribeForm.forEach((item) => new FormValidator(item, subscribeFields, FormType.SUBSCRIBE).init());
 }
 
 if (contactForm) {
-  new Validator(contactForm, contactFields, `contact`).init();
+  new FormValidator(contactForm, contactFields, FormType.CONTACT).init();
 }
 
 if (surveyForm) {
-  const allCheckboxes = surveyForm.querySelectorAll(`input[type=checkbox]`);
+  const checkboxes = surveyForm.querySelectorAll(`input[type=checkbox]`);
 
   const otherOption = surveyForm.querySelector(`.form__option-item--option-list`);
-  const otherOptionInText = surveyForm.querySelector(`.form__option-self`);
+  const otherOptionInput = surveyForm.querySelector(`.form__option-self`);
 
   const submitButton = surveyForm.querySelector(`.survey__form-button--submit`);
   const submitOptionButton = surveyForm.querySelector(`.survey__form-button--send`);
   const cancelButton = surveyForm.querySelector(`.survey__form-button--cancel`);
 
-  const send = (form, action, method) => {
-    const successMassage = surveyForm.querySelector(`.survey__form-success`);
-    const errorMessage = surveyForm.querySelector(`.form__message--error`);
-
-    const StatusCode = {
-      OK: 200
-    };
-
-    fetch(action, {
-      method,
-      body: form,
-    }).then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      if (data === StatusCode.OK) {
-        successMassage.classList.remove(`survey__form-success--hidden`);
-      } else {
-        errorMessage.classList.remove(`form__message--hidden`);
-      }
-    });
+  const isButtonDisabled = (button, state) => {
+    button.disabled = state;
   };
 
-  allCheckboxes.forEach((element) => element.addEventListener(`click`, function (evt) {
+  checkboxes.forEach((element) => element.addEventListener(`click`, function (evt) {
     if (evt.target.id === `option-7`) {
       evt.target.checked = false;
     }
 
-    let isChecked = Array.from(allCheckboxes).some((checkbox) => checkbox.checked === true);
+    let isChecked = Array.from(checkboxes).some((checkbox) => checkbox.checked === true);
 
     if (isChecked) {
-      submitButton.disabled = false;
-      submitOptionButton.disabled = false;
+      isButtonDisabled(submitButton, false);
+      isButtonDisabled(submitOptionButton, false);
     } else {
-      submitButton.disabled = true;
-      submitOptionButton.disabled = true;
+      isButtonDisabled(submitButton, true);
+      isButtonDisabled(submitOptionButton, true);
     }
 
   }));
 
   otherOption.addEventListener(`click`, function () {
     otherOption.classList.add(`form__option-item--hidden`);
-    otherOptionInText.classList.remove(`form__option-self--hidden`);
+    otherOptionInput.classList.remove(`form__option-self--hidden`);
     submitButton.classList.add(`survey__form-button--hidden`);
-    otherOptionInText.querySelector(`input`).focus();
+    otherOptionInput.querySelector(`input`).focus();
 
-    otherOptionInText.addEventListener(`input`, function () {
-      const input = otherOptionInText.querySelector(`input`);
+    otherOptionInput.addEventListener(`input`, function () {
+      const input = otherOptionInput.querySelector(`input`);
       let value = input.value;
 
       if (value.trim() === ``) {
-        submitOptionButton.disabled = true;
+        isButtonDisabled(submitOptionButton, true);
       } else {
-        submitOptionButton.disabled = false;
+        isButtonDisabled(submitOptionButton, false);
       }
     });
   });
 
   cancelButton.addEventListener(`click`, function () {
-    otherOptionInText.classList.add(`form__option-self--hidden`);
+    otherOptionInput.classList.add(`form__option-self--hidden`);
     otherOption.classList.remove(`form__option-item--hidden`);
     otherOption.querySelector(`.form__option-input`).checked = false;
     submitButton.classList.remove(`survey__form-button--hidden`);
 
-    otherOptionInText.querySelector(`input`).value = ``;
+    otherOptionInput.querySelector(`input`).value = ``;
   });
 
   surveyForm.addEventListener(`submit`, function (evt) {
     evt.preventDefault();
 
-    send(new FormData(surveyForm), surveyForm.action, surveyForm.method);
+    send(surveyForm, FormType.SURVEY);
   });
 }
 
 if (banner) {
-  const closeButton = document.querySelector(`.banner__button`);
+  const closeButton = banner.querySelector(`.banner__button`);
 
   closeButton.addEventListener(`click`, function () {
     banner.classList.add(`banner--hidden`);
