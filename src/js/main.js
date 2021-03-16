@@ -55,6 +55,7 @@ if (surveyForm) {
     otherOption.classList.add(`form__option-item--hidden`);
     otherOptionInput.classList.remove(`form__option-self--hidden`);
     submitButton.classList.add(`survey__form-button--hidden`);
+
     otherOptionInput.querySelector(`input`).focus();
 
     otherOptionInput.addEventListener(`input`, function () {
@@ -70,10 +71,10 @@ if (surveyForm) {
   });
 
   cancelButton.addEventListener(`click`, function () {
-    otherOptionInput.classList.add(`form__option-self--hidden`);
     otherOption.classList.remove(`form__option-item--hidden`);
-    otherOption.querySelector(`.form__option-input`).checked = false;
+    otherOptionInput.classList.add(`form__option-self--hidden`);
     submitButton.classList.remove(`survey__form-button--hidden`);
+    otherOption.querySelector(`.form__option-input`).checked = false;
 
     otherOptionInput.querySelector(`input`).value = ``;
   });

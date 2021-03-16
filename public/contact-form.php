@@ -16,8 +16,7 @@ if (isset($_POST)) {
   $email = trim($email);
   $message = trim($message);
 
-  // $to = "info@yin-young-you.com";
-  $to = "post.chirko@gmail.com";
+  $to = "info@yin-young-you.com";
 
   $mailSent = mail($to, "Kontakt: Neue Nachricht", "Name: ".$user_name."\r\nE-mail Adresse: ".$email."\r\nNachricht: \r\n".$message);
 

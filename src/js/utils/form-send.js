@@ -60,7 +60,6 @@ export const send = (form, type) => {
     return response.json();
   })
   .then((data) => {
-    console.log(data);
     if (data === StatusCode.OK || data.status === `pending`) {
       onSuccess(form, type);
     } else {
