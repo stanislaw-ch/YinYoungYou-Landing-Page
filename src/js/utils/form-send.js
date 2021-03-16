@@ -1,6 +1,6 @@
 import {FormType} from "../const.js";
-import {MailChimpError} from "../const.js";
-import {MailChimpErrorText} from "../const.js";
+import {MailChimpErrorType} from "../const.js";
+import {MailChimpErrorTypeText} from "../const.js";
 
 const onSuccess = (form, type) => {
   if (FormType.SURVEY === type) {
@@ -25,14 +25,14 @@ const onSuccess = (form, type) => {
 };
 
 const getMailChimpError = (data, errorMessage) => {
-  if (data.title === MailChimpError.INVALID) {
-    errorMessage.innerText = MailChimpErrorText.INVALID;
+  if (data.title === MailChimpErrorType.INVALID) {
+    errorMessage.innerText = MailChimpErrorTypeText.INVALID;
   }
-  if (data.title === MailChimpError.EXISTS) {
-    errorMessage.innerText = MailChimpErrorText.EXISTS;
+  if (data.title === MailChimpErrorType.EXISTS) {
+    errorMessage.innerText = MailChimpErrorTypeText.EXISTS;
   }
-  if (data.title === MailChimpError.FORGOTTEN) {
-    errorMessage.innerText = MailChimpErrorText.FORGOTTEN;
+  if (data.title === MailChimpErrorType.FORGOTTEN) {
+    errorMessage.innerText = MailChimpErrorTypeText.FORGOTTEN;
   }
 
   errorMessage.classList.remove(`form__message--hidden`);
