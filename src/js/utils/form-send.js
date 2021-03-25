@@ -67,4 +67,3 @@ export const send = (form, type) => {
     }
   });
 };
-

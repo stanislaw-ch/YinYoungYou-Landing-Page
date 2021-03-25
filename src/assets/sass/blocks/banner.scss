@@ -7,6 +7,8 @@
   background-color: #03dba1;
   box-shadow: 6px 0 3px 3px #00000017;
 
+  animation-duration: 1s;
+
   & a {
     color: #000000;
   }
@@ -43,7 +45,7 @@
     }
   }
 
-  &__button {
+  &__close-button {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -80,6 +82,25 @@
       transform: rotate(-45deg);
     }
   }
+
+  &__google-analytics {
+    // & h3 {
+
+    // }
+
+    // & p {
+
+    // }
+  }
+
+  &__button {
+    // &--opt-in{
+
+    // }
+    // &--opt-out{
+
+    // }
+  }
 }
 
 
@@ -115,14 +136,14 @@
       }
     }
 
-    &__button {
+    &__close-button {
       top: 19px;
       right: 30px;
 
       &::before,
       &::after {
         top: 14px;
-        left: 4px;
+        left: 2px;
 
         width: 24px;
       }
