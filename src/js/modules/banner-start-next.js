@@ -13,6 +13,6 @@ export const setStartNextBanner = function () {
   animateCSS(banner, `slideInUp`);
 
   closeButton.addEventListener(`click`, function () {
-    banner.classList.add(`banner--hidden`);
+    banner.remove();
   });
 };

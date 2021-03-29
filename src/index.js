@@ -3,7 +3,6 @@ import './js/main.js';
 import './contact-form.php';
 import './survey.php';
 import './subscribe.php';
-require(`animate.css`);
 require(`./index.html`);
 require(`./contact.html`);
 require(`./impressum.html`);
