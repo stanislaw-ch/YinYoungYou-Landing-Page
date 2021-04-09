@@ -1,7 +1,6 @@
 import analytics from "../utils/google-analytics.js";
 import {animateCSS} from "../utils/animate-css.js";
 import {createBanner} from "../utils/banner-create.js";
-import {setStartNextBanner} from "../modules/banner-start-next.js";
 import {Banners, Cookies} from "../const.js";
 
 export const setGoogleAnalyticsBanner = function () {
@@ -18,7 +17,6 @@ export const setGoogleAnalyticsBanner = function () {
       selector.remove();
       sessionStorage.setItem(`cookies_enabled`, isAccept);
       isAnalytics();
-      setStartNextBanner();
     });
   };
 
