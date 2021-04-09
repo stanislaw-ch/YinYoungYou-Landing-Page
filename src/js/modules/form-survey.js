@@ -1,4 +1,4 @@
-import {send} from "../utils/form-send.js";
+import {sendToSheets} from "../utils/form-send.js";
 import {FormType} from "../const.js";
 
 export const setSurveyForm = function () {
@@ -63,10 +63,12 @@ export const setSurveyForm = function () {
       otherOptionInput.querySelector(`input`).value = ``;
     });
 
+    // const formToSheets = document.forms[`submit-to-google-sheet`];
+
     form.addEventListener(`submit`, function (evt) {
       evt.preventDefault();
 
-      send(form, FormType.SURVEY);
+      sendToSheets(form, FormType.SURVEY);
     });
   }
 };

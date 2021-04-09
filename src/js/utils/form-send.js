@@ -67,3 +67,21 @@ export const send = (form, type) => {
     }
   });
 };
+
+export const sendToSheets = (form, type) => {
+  const scriptURL = `https://script.google.com/macros/s/AKfycbwLEg8hvbAUJrQHEYBlD2NGFyNx9JVwSwajSs_TuvneRly017sloS8w9JWnFyv2vP-3/exec`;
+
+  fetch(scriptURL, {
+    method: form.method,
+    body: new FormData(form),
+  }).then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    if (data.result === `success`) {
+      onSuccess(form, type);
+    } else {
+      onError(form, data);
+    }
+  });
+};
