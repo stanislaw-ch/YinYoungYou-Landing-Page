@@ -69,7 +69,7 @@ export const send = (form, type) => {
 };
 
 export const sendToSheets = (form, type) => {
-  const scriptURL = `https://script.google.com/macros/s/AKfycbwLEg8hvbAUJrQHEYBlD2NGFyNx9JVwSwajSs_TuvneRly017sloS8w9JWnFyv2vP-3/exec`;
+  const scriptURL = `https://script.google.com/macros/s/AKfycbxWfdWVQ5sjW0GxjYGg3RHRobsxPlImJ0UQU81-YPZvKLNBzahdNDiLruYLdPp255oF/exec`;
 
   fetch(scriptURL, {
     method: form.method,

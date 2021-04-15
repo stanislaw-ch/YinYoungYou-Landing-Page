@@ -1,9 +1,9 @@
 import './assets/sass/main.scss';
 import './js/main.js';
-import './contact-form.php';
-import './subscribe.php';
-require(`./index.html`);
-require(`./contact.html`);
-require(`./impressum.html`);
-require(`./datenschutz.html`);
-require(`./cookie-richtlinien.html`);
+import './php/contact-form.php';
+import './php/subscribe.php';
+import 'raw-loader!./pug/pages/index.pug';
+import 'raw-loader!./pug/pages/contact.pug';
+import 'raw-loader!./pug/pages/impressum.pug';
+import 'raw-loader!./pug/pages/datenschutz.pug';
+import 'raw-loader!./pug/pages/cookie-richtlinien.pug';

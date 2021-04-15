@@ -18,7 +18,11 @@ if (isset($_POST)) {
 
   $to = "info@yin-young-you.com";
 
-  $mailSent = mail($to, "Kontakt: Neue Nachricht", "Name: ".$user_name."\r\nE-mail Adresse: ".$email."\r\nNachricht: \r\n".$message);
+  if ($email === "eric.jones.z.mail@gmail.com") {
+    echo "403";
+  } else {
+    $mailSent = mail($to, "Kontakt: Neue Nachricht", "Name: ".$user_name."\r\nE-mail Adresse: ".$email."\r\nNachricht: \r\n".$message);
+  }
 
   if ($mailSent) {
     echo "200";

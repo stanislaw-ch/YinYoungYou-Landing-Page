@@ -12,10 +12,16 @@ const webpack = require(`webpack`);
 const isDev = process.env.NODE_ENV === `development`;
 const isProd = !isDev;
 
-const PAGES_DIR = path.resolve(__dirname, `src`);
+const PATHS = {
+  src: path.resolve(__dirname, `src`),
+  pug: path.resolve(__dirname, `src/pug/pages/`),
+};
+
 const PAGES = fs
-  .readdirSync(PAGES_DIR)
-  .filter((fileName) => fileName.endsWith(`.html`));
+  .readdirSync(`${PATHS.pug}`)
+  // .readdirSync(PATHS.src)
+  .filter((fileName) => fileName.endsWith(`.pug`));
+  // .filter((fileName) => fileName.endsWith(`.html`));
 
 const optimization = () => {
   const config = {
@@ -70,7 +76,7 @@ const jsLoaders = () => {
 
 module.exports = {
   target: process.env.NODE_ENV === `development` ? `web` : `browserslist`,
-  context: PAGES_DIR,
+  context: PATHS.src,
   mode: `development`,
   entry: {
     main: [`@babel/polyfill`, `./index.js`]
@@ -101,8 +107,10 @@ module.exports = {
     ...PAGES.map(
         (page) =>
           new HTMLWebpackPlugin({
-            template: `${PAGES_DIR}/${page}`,
-            filename: `./${page}`,
+            template: `${PATHS.pug}/${page}`,
+            // template: `${PATHS.src}/${page}`,
+            filename: `./${page.replace(/\.pug/, `.html`)}`,
+            // filename: `./${page}`,
             minify: {
               collapseWhitespace: isProd
             }
@@ -128,6 +136,18 @@ module.exports = {
   ],
   module: {
     rules: [
+      {
+        test: /\.pug$/,
+        use: [
+          {loader: `raw-loader`},
+          {
+            loader: `pug-html-loader`,
+            options: {
+              "pretty": true
+            }
+          }
+        ]
+      },
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
@@ -195,10 +215,10 @@ module.exports = {
         exclude: /node_modules/,
         use: jsLoaders()
       },
-      {
-        test: /\.html$/,
-        loader: `raw-loader`
-      }
+      // {
+      //   test: /\.html$/,
+      //   loader: `raw-loader`
+      // }
     ]
   }
 };

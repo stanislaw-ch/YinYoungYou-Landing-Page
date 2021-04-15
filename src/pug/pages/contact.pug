@@ -1,0 +1,60 @@
+extends ../layout/main
+
+block content
+  section.contact
+    .contact__bg
+    .contact__wrapper
+      .contact__content-wrapper
+        h2.visually-hidden Konaktformular
+        .container
+          .contact__content
+            h3 Schreibe uns eine Nachricht
+            p
+              | Hast du Fragen oder Anmerkungen?
+              br
+              | Wir freuen uns über deine Kontaktaufnahme und antworten dir frühstmöglich.
+      .contact__form-wrapper
+        .container
+          .contact__form-content-wrapper
+            .contact__picture
+              picture
+                source(type='image/webp' srcset='img/team-foto-Stella_Susanne@1x.webp 1x, img/team-foto-Stella_Susanne@2x.webp 2x')
+                // 1х: 400px; 2x: 800px
+                img(src='img/team-foto-Stella_Susanne@1x.png' srcset='img/team-foto-Stella_Susanne@2x.png 2x' width='150' height='150' alt='Foto von Team')
+            .contact__form
+              form.form(action='contact-form.php' method='post')
+                .contact__form-item-wrapper
+                  .contact__form-item
+                    label(for='user-name') Name:
+                    input#user-name.contact__form-input(type='text' name='user_name' placeholder='Dein Name')
+                    span.form__input-message
+                  .contact__form-item
+                    label(for='email-3') E-mail Adresse:
+                    input#email-3.contact__form-input.form__input(data-type='email' type='email' name='email' placeholder='Dein E-Mail' required='')
+                    span.form__input-message
+                .contact__form-item.contact__form-item--textarea
+                  label(for='message') Nachricht:
+                  textarea#message.contact__form-input.contact__form-input--textarea(data-type='message' name='message' placeholder='Was können wir für dich tun?' required='')
+                  span.form__input-message
+                button.contact__form-button.form__button Nachricht abschicken
+                .form__message.form__message--error.form__message--hidden
+                  p Oops! Leider ist etwas Schiefgelaufen :/
+  section.newsletter
+    .newsletter__bg
+    .container
+      .newsletter__content-wrapper
+        .newsletter__content
+          h3 Du möchtest auf dem Laufenden bleiben?
+          .newsletter__subscribe.subscribe
+            p
+              | Trage hier deine E-Mail-Adresse ein - wir informieren dich gerne, sobald wir starten können:
+            form.form(action='subscribe.php' method='POST')
+              .subscribe__fields-wrapper
+                label.visually-hidden(for='email-4') E-mail
+                input#email-4.subscribe__input.form__input(type='email' name='email' data-type='email' required='')
+                span.form__input-message
+                button.form__button(type='submit') Abonnieren
+              .form__message.form__message--success.form__message--hidden
+                p Prüf bitte deinen Posteingang oder Spam-Ordner, um dein Abonnement zu bestätigen
+              .form__message.form__message--error.form__message--hidden
+                p Oops! Leider ist etwas Schiefgelaufen :/
