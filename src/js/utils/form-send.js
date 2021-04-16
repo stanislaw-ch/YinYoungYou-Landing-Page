@@ -48,37 +48,25 @@ const onError = (form, data) => {
   }
 };
 
-export const send = (form, type) => {
+export const send = (form, type, linkAPI) => {
   const StatusCode = {
     OK: 200
   };
 
-  fetch(form.action, {
+  let formAction = form.action;
+
+  if (type === FormType.SURVEY) {
+    formAction = linkAPI;
+  }
+
+  fetch(formAction, {
     method: form.method,
     body: new FormData(form),
   }).then((response) => {
     return response.json();
   })
   .then((data) => {
-    if (data === StatusCode.OK || data.status === `pending`) {
-      onSuccess(form, type);
-    } else {
-      onError(form, data);
-    }
-  });
-};
-
-export const sendToSheets = (form, type) => {
-  const scriptURL = `https://script.google.com/macros/s/AKfycbxWfdWVQ5sjW0GxjYGg3RHRobsxPlImJ0UQU81-YPZvKLNBzahdNDiLruYLdPp255oF/exec`;
-
-  fetch(scriptURL, {
-    method: form.method,
-    body: new FormData(form),
-  }).then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    if (data.result === `success`) {
+    if (data === StatusCode.OK || data.status === `pending` || data.result === `success`) {
       onSuccess(form, type);
     } else {
       onError(form, data);
