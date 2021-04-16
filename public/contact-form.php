@@ -16,16 +16,22 @@ if (isset($_POST)) {
   $email = trim($email);
   $message = trim($message);
 
-  $to = "info@yin-young-you.com";
+  $to = 'info@yin-young-you.com';
 
-  if ($email === "eric.jones.z.mail@gmail.com") {
-    echo "403";
+  $mailsToBlock = array(
+    'eric.jones.z.mail@gmail.com',
+  );
+
+  $isBlocked = in_array($email, $mailsToBlock, true);
+
+  if ($isBlocked || $_POST['checkbox'] == 'on') {
+    echo '403';
   } else {
-    $mailSent = mail($to, "Kontakt: Neue Nachricht", "Name: ".$user_name."\r\nE-mail Adresse: ".$email."\r\nNachricht: \r\n".$message);
+    $mailSent = mail($to, 'Kontakt: Neue Nachricht', 'Name: '.$user_name.'\r\nE-mail Adresse: '.$email.'\r\nNachricht: \r\n'.$message);
   }
 
   if ($mailSent) {
-    echo "200";
+    echo '200';
   };
 };
 ?>

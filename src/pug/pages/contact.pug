@@ -24,6 +24,7 @@ block content
             .contact__form
               form.form(action='contact-form.php' method='post')
                 .contact__form-item-wrapper
+                  input(type='checkbox' name='checkbox' checked)
                   .contact__form-item
                     label(for='user-name') Name:
                     input#user-name.contact__form-input(type='text' name='user_name' placeholder='Dein Name')

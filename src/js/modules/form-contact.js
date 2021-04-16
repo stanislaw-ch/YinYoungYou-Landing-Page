@@ -6,6 +6,10 @@ export const setContactForm = function () {
   const fields = [`email`, `message`];
 
   if (form) {
+    const checkBox = form.querySelector(`input[type="checkbox"]`);
+
+    checkBox.checked = false;
+
     new FormValidator(form, fields, FormType.CONTACT).init();
   }
 };

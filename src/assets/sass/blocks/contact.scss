@@ -78,6 +78,10 @@
   &__form {
     padding-top: 17px;
 
+    & input[type="checkbox"] {
+      display: none;
+    }
+
     & .form__message {
       justify-content: center;
 
