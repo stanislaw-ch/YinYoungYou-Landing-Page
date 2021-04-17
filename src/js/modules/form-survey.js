@@ -63,8 +63,6 @@ export const setSurveyForm = function () {
       otherOptionInput.querySelector(`input`).value = ``;
     });
 
-    // const formToSheets = document.forms[`submit-to-google-sheet`];
-
     form.addEventListener(`submit`, function (evt) {
       evt.preventDefault();
 

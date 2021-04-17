@@ -2,6 +2,16 @@ import {FormType} from "../const.js";
 import {MailChimpErrorType} from "../const.js";
 import {MailChimpErrorTypeText} from "../const.js";
 
+const onLoad = (form, type) => {
+  if (FormType.SURVEY === type) {
+    const loadButton = form.querySelectorAll(`button[type="submit"]`);
+    loadButton.forEach((button) => {
+      button.innerText = `Loading...`;
+      button.disabled = true;
+    });
+  }
+};
+
 const onSuccess = (form, type) => {
   if (FormType.SURVEY === type) {
     const successMessage = form.querySelector(`.survey__form-success`);
@@ -58,6 +68,8 @@ export const send = (form, type, linkAPI) => {
   if (type === FormType.SURVEY) {
     formAction = linkAPI;
   }
+
+  onLoad(form, type);
 
   fetch(formAction, {
     method: form.method,
