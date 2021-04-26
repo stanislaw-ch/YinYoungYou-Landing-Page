@@ -14,3 +14,4 @@ node_modules/
 # Папка с собранными файлами проекта
 # public/main.js
 # public/main.js.map
+config.php
