@@ -8,6 +8,7 @@ import './js/main.js';
 import './php/contact-form.php';
 import './php/subscribe.php';
 import './php/config.php';
+import './php/scriptURL.php';
 
 // Pug
 import 'raw-loader!./pug/pages/index.pug';

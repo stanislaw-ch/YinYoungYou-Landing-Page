@@ -66,9 +66,14 @@ export const setSurveyForm = function () {
     form.addEventListener(`submit`, function (evt) {
       evt.preventDefault();
 
-      const scriptURL = `https://script.google.com/macros/s/AKfycbxWfdWVQ5sjW0GxjYGg3RHRobsxPlImJ0UQU81-YPZvKLNBzahdNDiLruYLdPp255oF/exec`;
-
-      send(form, FormType.SURVEY, scriptURL);
+      fetch(`./scriptURL.php`, {
+        method: `GET`,
+      }).then((response) => {
+        return response.json();
+      })
+      .then((scriptURL) => {
+        send(form, FormType.SURVEY, scriptURL);
+      });
     });
   }
 };
