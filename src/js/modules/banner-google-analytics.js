@@ -12,8 +12,8 @@ export const setGoogleAnalyticsBanner = function () {
     }
   };
 
-  const onButtonClick = async function (trigger, selector, isAccept) {
-    await trigger.addEventListener(`click`, function () {
+  const onButtonClick = function (trigger, selector, isAccept) {
+    trigger.addEventListener(`click`, function () {
       selector.remove();
       sessionStorage.setItem(`cookies_enabled`, isAccept);
       isAnalytics();
