@@ -1,7 +1,7 @@
 import FormValidator from '../utils/form-validator.js';
 import {FormType} from "../const.js";
 
-export const setSubscribeForm = function () {
+export const getSubscribeForm = function () {
   const form = document.querySelectorAll(`.subscribe form`);
   const fields = [`email`];
 

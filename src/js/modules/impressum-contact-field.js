@@ -1,7 +1,7 @@
 
 import {Contacts} from "../const.js";
 
-export const setImpressumContactField = function () {
+export const getImpressumContactField = function () {
   const contactField = document.querySelector(`.aup__contact`);
 
   const getImpressumContact = (elem) => {

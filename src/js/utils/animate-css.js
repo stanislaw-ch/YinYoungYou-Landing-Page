@@ -1,5 +1,4 @@
 export const animateCSS = (element, animation, prefix = `animate__`) =>
-  // We create a Promise and return it
   new Promise((resolve) => {
     const animationName = `${prefix}${animation}`;
     const node = element;
@@ -7,7 +6,6 @@ export const animateCSS = (element, animation, prefix = `animate__`) =>
 
     node.classList.add(`${prefix}animated`, animationName);
 
-    // When the animation ends, we clean the classes and resolve the Promise
     function handleAnimationEnd(event) {
       event.stopPropagation();
       node.classList.remove(`${prefix}animated`, animationName);

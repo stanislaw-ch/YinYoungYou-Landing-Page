@@ -3,7 +3,7 @@ import {animateCSS} from "../utils/animate-css.js";
 import {createBanner} from "../utils/banner-create.js";
 import {Banners, Cookies} from "../const.js";
 
-export const setGoogleAnalyticsBanner = function () {
+export const getGoogleAnalyticsBanner = function () {
   const isAnalytics = function () {
     if (sessionStorage.getItem(`cookies_enabled`) === Cookies.TRUE) {
       analytics.onAccept();

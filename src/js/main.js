@@ -1,16 +1,16 @@
 require(`animate.css`);
 
-import {setImpressumContactField} from "./modules/impressum-contact-field.js";
-import {setGoogleAnalyticsBanner} from "./modules/banner-google-analytics.js";
-import {setSurveyForm} from "./modules/form-survey.js";
-import {setContactForm} from "./modules/form-contact.js";
-import {setSubscribeForm} from "./modules/form-subscribe.js";
+import {getImpressumContactField} from "./modules/impressum-contact-field.js";
+import {getGoogleAnalyticsBanner} from "./modules/banner-google-analytics.js";
+import {getSurveyForm} from "./modules/form-survey.js";
+import {getContactForm} from "./modules/form-contact.js";
+import {getSubscribeForm} from "./modules/form-subscribe.js";
 
-setImpressumContactField();
-setSurveyForm();
-setContactForm();
-setSubscribeForm();
+getImpressumContactField();
+getSurveyForm();
+getContactForm();
+getSubscribeForm();
 
 if (sessionStorage.getItem(`cookies_enabled`) === null) {
-  setGoogleAnalyticsBanner();
+  getGoogleAnalyticsBanner();
 }

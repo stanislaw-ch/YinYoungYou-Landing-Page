@@ -1,7 +1,7 @@
 import {send} from "../utils/form-send.js";
 import {FormType} from "../const.js";
 
-export const setSurveyForm = function () {
+export const getSurveyForm = function () {
   const form = document.querySelector(`.survey form`);
 
   if (form) {

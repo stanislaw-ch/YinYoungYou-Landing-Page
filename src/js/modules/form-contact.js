@@ -1,7 +1,7 @@
 import FormValidator from '../utils/form-validator.js';
 import {FormType} from "../const.js";
 
-export const setContactForm = function () {
+export const getContactForm = function () {
   const form = document.querySelector(`.contact__form form`);
   const fields = [`email`, `message`];
 
