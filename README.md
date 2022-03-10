@@ -16,4 +16,4 @@ The stack used for this project was:
 - Pug
 - JavaScript
 - Webpack
-- Github
+- Git
